@@ -1,0 +1,90 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.bulma-blocks-editor-link-card {
+
+  padding: 0.875rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $black;
+  background: #f3f3f3;
+  margin-bottom: 1.75rem;
+
+  .content {
+    width: 100%;
+    max-width: 30rem;
+
+    span {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f3f3f3;
+    color: black;
+    font-family: sans-serif;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+
+    .dashicons {
+      margin-right: 0.75rem;
+    }
+  }
+
+  &__description {
+    width: 80%;
+    font-size: 0.85rem !important;
+    margin: 0 !important;
+    margin-bottom: 0.75rem !important;
+
+    &--error {
+      color: red !important;
+    }
+  }
+
+  &__button {
+    border: #00c4a7 1px solid;
+    border-radius: 0.15rem;
+    padding: 0.35rem 0.45rem;
+    font-size: 0.85rem;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #00c4a7;
+      border-color: transparent;
+      color: white;
+    }
+  }
+
+  &__preview {
+    .bulma-blocks-editor-site-hero__button {
+      margin-top: 0.5rem;
+    }
+  }
+}

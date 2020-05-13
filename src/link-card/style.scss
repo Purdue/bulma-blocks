@@ -1,0 +1,39 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+@import '../scss/bulma-utilities';
+
+.link-card {
+  &.card {
+    display: flex;
+    flex-direction: column;
+  
+    &-image {
+      height: 17rem;
+      width: 100%;
+  
+      .background-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      p {
+        font-size: 1.875rem !important;
+        font-family: acumin-pro-condensed;
+      }
+    }
+  }
+}

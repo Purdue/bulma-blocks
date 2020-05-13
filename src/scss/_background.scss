@@ -1,0 +1,25 @@
+.has-bg {
+  &--black {
+    background-color: black;
+
+    p {
+      color: white;
+    }
+  }
+
+  &--darkGray {
+    background-color: #252525;
+
+    p {
+      color: white;
+    }
+  }
+
+  &--lightGray {
+    background-color: #ededed;
+
+    p {
+      color: black;
+    }
+  }
+}

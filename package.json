@@ -1,0 +1,15 @@
+{
+  "name": "wp-bulma-blocks",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject"
+  },
+  "dependencies": {
+    "bulma": "^0.8.2",
+    "cgb-scripts": "1.22.0",
+    "classnames": "^2.2.6"
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../scss/bulma-utilities';
+
+.column {
+  &.has-background {
+    &-black {
+      p {
+        color: white;
+      }
+    }
+
+    &-black-ter {
+      p {
+        color: white;
+      }
+    }
+  }
+
+
+  &.has-aligned-right {
+
+    display: flex;
+    justify-content: flex-end;
+
+    @include desktop {
+      padding: 8rem 3.25rem 0 !important;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: auto;
+      width: auto;
+      margin: 0;
+
+      @include desktop {
+        max-width: 27.5rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.columns.is-gapless {
+  &>.column {
+    &.has-aligned-right {
+      @include desktop {
+        padding: 8rem 3.25rem !important;
+      }
+    }
+  }
+}

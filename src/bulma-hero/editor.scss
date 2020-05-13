@@ -1,0 +1,25 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.bulma-blocks-editor-hero {
+  // &--selected {
+  //   .editor-inner-blocks {
+  //     padding: 1px 0.875rem;
+  //   }
+  // }
+  // display: block;
+  // color: $black;
+  // margin-bottom: 1.75rem;
+
+  .block-editor-inner-blocks {
+    padding: 0.75rem;
+  }
+
+  .block-list-appender {
+    margin: 0;
+  }
+}

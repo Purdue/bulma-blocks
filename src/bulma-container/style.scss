@@ -1,0 +1,17 @@
+@import '../scss/bulma-utilities';
+
+.container {
+  &.has-background {
+    &-black {
+      p {
+        color: white;
+      }
+    }
+
+    &-black-ter {
+      p {
+        color: white;
+      }
+    }
+  }
+}

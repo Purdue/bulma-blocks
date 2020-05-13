@@ -1,0 +1,22 @@
+.section {
+  &.has-background {
+    &-black {
+      p {
+        color: white;
+      }
+    }
+
+    &-black-ter {
+      p {
+        color: white;
+      }
+    }
+  }
+
+  &.side-padding {
+    &-lg {
+      padding-left: 7rem;
+      padding-right: 7rem;
+    }
+  }
+}

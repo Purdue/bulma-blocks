@@ -1,0 +1,90 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+@import '../scss/bulma-utilities';
+
+.bulma-blocks-image {
+  &__caption {
+    border-bottom: 1px solid #707070;
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    text-align: left;
+
+    p {
+      font-size: 1rem !important;
+
+      span {
+        font-size: 0.875rem !important;
+        font-family: "United Sans Condensed" !important;
+        color: #707070 !important;
+        text-transform: uppercase;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+.left {
+  padding: 0 1.5rem 0 0;
+  margin-bottom: 0.5rem !important;
+
+  @include touch {
+    width: 100%;
+
+    img {
+      max-width: 100% !important;
+      max-height: unset !important;
+    }
+
+    .bulma-blocks-image__caption {
+      max-width: 100% !important;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @include desktop {
+    float: left;
+  }
+
+}
+
+.right {
+  padding: 0 0 0 1.5rem;
+  margin-bottom: 0.5rem !important;
+
+  @include touch {
+    width: 100%;
+
+    img {
+      max-width: 100% !important;
+      max-height: unset !important;
+    }
+
+    .bulma-blocks-image__caption {
+      max-width: 100% !important;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @include desktop {
+    float: right;
+  }
+}
+
+.center {
+  display: flex !important;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  &+div.bulma-blocks-image__caption {
+    margin-bottom: 3rem;
+  }
+}

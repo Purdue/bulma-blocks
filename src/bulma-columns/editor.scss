@@ -1,0 +1,57 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.bulma-blocks-editor-columns {
+  display: block;
+  color: $black;
+
+  & > .block-editor-inner-blocks {
+    & > .block-editor-block-list__layout {
+      &:not(.is-desktop) {
+        display: flex;
+      }
+
+      // These styles were originally from columns bulma class
+      // margin-left: -0.75rem;
+      // margin-right: -0.75rem;
+      margin-bottom: -0.75rem;
+      margin-top: -0.75rem;
+    }
+  }
+}
+
+.bulma-columns-range-control {
+  width: 100%;
+
+  label {
+    margin-bottom: 1rem !important;
+  }
+
+  .components-range-control__number {
+    margin: 0 !important;
+  }
+
+  .components-range-control__slider {
+    display: none;
+  }
+
+  .components-base-control__field {
+    justify-content: flex-start;
+  }
+}
+
+// fixes outline on any selected block
+.block-editor-block-list__layout .block-editor-block-list__block[data-block] {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  &::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

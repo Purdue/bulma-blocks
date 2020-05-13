@@ -1,0 +1,15 @@
+.hero {
+  &.has-background {
+    &-black {
+      p {
+        color: white;
+      }
+    }
+
+    &-black-ter {
+      p {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+@import "../../node_modules/bulma/bulma.sass";
+
+.bulma-blocks-editor-box {
+  // &--selected {
+  //   padding: 1px 0.875rem;
+
+  // }
+
+  // display: block;
+  // color: $black;
+  // margin-bottom: 1.75rem;
+  
+  .block-editor-inner-blocks {
+    padding: 0.75rem;
+  }
+
+  .block-list-appender {
+    margin: 0;
+  }
+}
