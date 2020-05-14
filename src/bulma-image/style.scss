@@ -4,7 +4,7 @@
  * CSS for both Frontend+Backend.
  */
 
-@import '../scss/bulma-utilities';
+@import "../scss/bulma-utilities";
 
 .bulma-blocks-image {
   &__caption {
@@ -29,49 +29,34 @@
 }
 
 .left {
-  padding: 0 1.5rem 0 0;
+  padding: 0.5rem 1.5rem 0 0;
   margin-bottom: 0.5rem !important;
-
-  @include touch {
-    width: 100%;
-
-    img {
-      max-width: 100% !important;
-      max-height: unset !important;
-    }
+  float: left;
+  @media (max-width: 414px) {
+    float: none;
+    padding-right: 0;
 
     .bulma-blocks-image__caption {
       max-width: 100% !important;
       margin-bottom: 2.5rem;
+      justify-content: center;
     }
   }
-
-  @include desktop {
-    float: left;
-  }
-
 }
 
 .right {
-  padding: 0 0 0 1.5rem;
+  padding: 0.5rem 0 0 1.5rem;
   margin-bottom: 0.5rem !important;
+  float: right;
 
-  @include touch {
-    width: 100%;
-
-    img {
-      max-width: 100% !important;
-      max-height: unset !important;
-    }
-
+  @media (max-width: 414px) {
+    float: none;
+    padding-left: 0;
     .bulma-blocks-image__caption {
       max-width: 100% !important;
       margin-bottom: 2.5rem;
+      justify-content: center;
     }
-  }
-
-  @include desktop {
-    float: right;
   }
 }
 
@@ -84,7 +69,31 @@
 }
 
 .image {
-  &+div.bulma-blocks-image__caption {
+  & + div.bulma-blocks-image__caption {
     margin-bottom: 3rem;
   }
+
+  @include touch {
+    &.full-width-mo {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      float: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    img.full-width-mo {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+    }
+  }
+
+}
+
+.clearfix {
+  clear: both;
 }

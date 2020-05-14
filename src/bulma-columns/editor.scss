@@ -13,6 +13,7 @@
     & > .block-editor-block-list__layout {
       &:not(.is-desktop) {
         display: flex;
+        flex-wrap: wrap;
       }
 
       // These styles were originally from columns bulma class

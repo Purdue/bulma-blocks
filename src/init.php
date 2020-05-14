@@ -101,7 +101,8 @@ add_filter( 'block_categories', 'my_plugin_block_categories', 1, 2 );
 
 // add the bulma container class around all content
 function add_content_container ( $content ) {
-	if ( is_page() ) {
+	error_log($content);
+	if ( is_page() || is_single() ) {
 			return (
 				'<div class="content">'.
 					$content.

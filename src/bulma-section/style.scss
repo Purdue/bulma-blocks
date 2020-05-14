@@ -17,6 +17,13 @@
     &-lg {
       padding-left: 7rem;
       padding-right: 7rem;
+      @media (max-width:768px){
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      @media (max-width:414px){
+        padding:0;
+      }
     }
   }
 }
