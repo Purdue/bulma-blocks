@@ -216,19 +216,19 @@ registerBlockType("bulma-blocks/link-card", {
       <a
         href={props.attributes.link}
         target={props.attributes.external ? "_blank" : "_self"}
-        className={"link-card card"}
+        className={"card media link-card-horizontal"}
         rel="noopener noreferrer"
       >
-        <div className={"card-image"}>
-          <span
-            className="background-image"
-            role="img"
-            style={{ backgroundImage: `url(${props.attributes.imgUrl})` }}
-            aria-label={props.attributes.altText}
-          />
+        <div className={"media-left"}>
+          <figure className="image">
+            <img src={props.attributes.imgUrl} alt={props.attributes.altText}/>
+          </figure>
         </div>
-        <div className={"card-content"}>
-          <p>{props.attributes.subText}</p>
+        <div className={"media-content"}>
+          <p className={"title is-4"}>{props.attributes.subText}</p>
+          <div className={"read-more-button"}>
+            <span>Read More</span>
+          </div>
         </div>
       </a>
     );
