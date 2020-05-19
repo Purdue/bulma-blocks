@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "bulma": "^0.8.2",
-    "cgb-scripts": "1.22.0",
+    "cgb-scripts": "1.23.0",
     "classnames": "^2.2.6"
   }
 }
