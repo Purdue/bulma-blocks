@@ -4,11 +4,8 @@
  * CSS for both Frontend+Backend.
  */
 
-.wp-block-cgb-block-bulma-blocks  {
-  background: $red;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+.has-dividers {
+  .column:not(:last-child) {
+      border-right: 1px solid #9d9795;
+  }
 }

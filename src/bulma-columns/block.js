@@ -74,7 +74,9 @@ registerBlockType("bulma-blocks/columns", {
   attributes: {
     numColumns: { type: "number" },
     isCentered: { type: "boolean" },
+    dividers: { type: "boolean", default: false },
     collapse: { type: "string", default: "" },
+    bgColor: { type: "string", default: "" },
   },
 
   supports: {
@@ -121,6 +123,13 @@ registerBlockType("bulma-blocks/columns", {
             />
           </PanelRow>
           <PanelRow>
+            <CheckboxControl
+              label="Include dividers between columns?"
+              checked={props.attributes.dividers}
+              onChange={(checked) => props.setAttributes({ dividers: checked })}
+            />
+          </PanelRow>
+          <PanelRow>
             <SelectControl
               label="Columns Collapse"
               help="Choose at which screen size the columns collapse to a single column."
@@ -132,6 +141,23 @@ registerBlockType("bulma-blocks/columns", {
               ]}
               onChange={(collapse) => {
                 props.setAttributes({ collapse });
+              }}
+            />
+          </PanelRow>
+        </PanelBody>
+        <PanelBody>
+          <PanelRow>
+            <SelectControl
+              label="Background Color"
+              value={props.attributes.bgColor}
+              options={[
+                { value: "", label: "None" },
+                { value: "has-background-black", label: "Black" },
+                { value: "has-background-grey-lighter", label: "Light Gray" },
+                { value: "has-background-black-ter", label: "Dark Gray" },
+              ]}
+              onChange={(bgColor) => {
+                props.setAttributes({ bgColor });
               }}
             />
           </PanelRow>
@@ -166,7 +192,9 @@ registerBlockType("bulma-blocks/columns", {
       <div
         className={`columns${
           props.attributes.isCentered ? " is-centered" : ""
-        } is-multiline ${props.attributes.collapse || ""}`}
+        } is-multiline ${props.attributes.collapse || ""} ${
+          props.attributes.bgColor !== "" ? props.attributes.bgColor : ""
+        } ${props.attributes.dividers ? "has-dividers" : ""}`}
       >
         <InnerBlocks.Content />
       </div>
