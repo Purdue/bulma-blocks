@@ -1,0 +1,14 @@
+block-edit:
+  version: VERSION
+  js:
+    dist/blocks.build.js: {}
+  css:
+    theme:
+      dist/blocks.editor.build.css: {}
+  dependencies:
+    - gutenberg/edit-node
+block-view:
+  version: VERSION
+  css:
+    theme:
+      dist/blocks.style.build.css: {}

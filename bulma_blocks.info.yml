@@ -1,0 +1,12 @@
+name: Bulma Blocks
+type: module
+description: Bulma CSS Framework Layout Blocks for Gutenburg.
+package: Gutenberg
+core: 8.x
+dependencies:
+  - gutenberg
+
+# Information added by Drupal.org packaging script on 2020-04-23
+version: '8.x-1.11'
+project: 'gutenberg'
+datestamp: 1587658512

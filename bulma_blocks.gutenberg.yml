@@ -1,0 +1,6 @@
+# Libraries to be injected on editor (node edit)
+libraries-edit:
+  - bulma_blocks/block-edit
+# Libraries to be injected on node view
+libraries-view:
+  - bulma_blocks/block-view
