@@ -16,6 +16,18 @@ const { registerBlockType } = wp.blocks // Import registerBlockType() from wp.bl
 const { PanelBody, PanelRow, CheckboxControl, SelectControl } = wp.components
 const { InnerBlocks, InspectorControls } = wp.blockEditor
 
+// implement the bulma blocks category.
+
+const { dispatch, select } = wp.data;
+
+const category = {
+  slug: 'bulma-blocks',
+  title: __( 'Bulma Blocks' ),
+};
+
+const currentCategories = select( 'core/blocks' ).getCategories().filter( item => item.slug !== category.slug );
+dispatch( 'core/blocks' ).setCategories( [ category, ...currentCategories ] );
+
 /**
  * Register: aa Gutenberg Block.
  *
@@ -74,8 +86,7 @@ registerBlockType( 'bulma-blocks/container', {
       }
     }
 
-    const select = wp.data.select( 'core/block-editor' )
-    const innerBlocks = select.getBlock( props.clientId ).innerBlocks
+    const innerBlocks = select( 'core/block-editor' ).getBlock( props.clientId ).innerBlocks
     const hasChildBlocks = innerBlocks.length > 0
 
     return (
@@ -144,9 +155,8 @@ registerBlockType( 'bulma-blocks/container', {
 } )
 
 function hasSelectedInnerBlock( props ) {
-  const select = wp.data.select( 'core/editor' )
-  const selected = select.getBlockSelectionStart()
-  const inner = select.getBlock( props.clientId ).innerBlocks
+  const selected = select( 'core/editor' ).getBlockSelectionStart()
+  const inner = select( 'core/editor' ).getBlock( props.clientId ).innerBlocks
   for ( let i = 0; i < inner.length; i++ ) {
     if (
       inner[ i ].clientId === selected ||
