@@ -1,0 +1,25 @@
+name: Blocks Build
+
+on:
+  pull_request:
+    types: [ closed ]
+
+jobs:
+  build:
+
+    if: github.event.pull_request.merged == true
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build production blocks CSS and Javascript files.
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build
