@@ -98,6 +98,7 @@ registerBlockType( 'bulma-blocks/section', {
                     { value: 'has-background-black', label: 'Black' },
                     { value: 'has-background-grey-lighter', label: 'Light Gray' },
                     { value: 'has-background-black-ter', label: 'Dark Gray' },
+                    { value: 'has-background-boiler-gold', label: 'Boilermaker Gold' },
                   ]
                 }
                 onChange={ ( bgColor ) => {
