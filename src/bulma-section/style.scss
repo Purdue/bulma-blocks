@@ -11,18 +11,24 @@
         color: white;
       }
     }
+
+    &-boiler-gold {
+      background: #cfb991 !important;
+    }
   }
 
   &.side-padding {
     &-lg {
       padding-left: 7rem;
       padding-right: 7rem;
-      @media (max-width:768px){
+
+      @media (max-width:768px) {
         padding-left: 2rem;
         padding-right: 2rem;
       }
-      @media (max-width:414px){
-        padding:0;
+
+      @media (max-width:414px) {
+        padding: 0;
       }
     }
   }
