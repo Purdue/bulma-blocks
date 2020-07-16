@@ -6,21 +6,23 @@ Adds Gutenberg blocks based on Bulma.io CSS framework
 
 Relevant changes are documented below.
 
-### [1.1.0] - 2020-05-13
+### [1.3.0] - 2020-07-16
+#### Updated
+- Link card fixes
+- Gold background to section
 
 #### Added
+- Column classname
 
-- Initial public release
+### [1.2.4] - 2020-06-24
+#### Added
+- Update bulma section block, add an option for boilermaker gold background color.
 
 ### [1.2.3] - 2020-06-11
-
 #### Added
-
 - Update link card block, make the link text editable
 - Add configuration to make them work on Drupal
 
-### [1.2.4] - 2020-06-24
-
+### [1.1.0] - 2020-05-13
 #### Added
-
-- Update bulma section block, add an option for boilermaker gold background color.
+- Initial public release
