@@ -359,7 +359,7 @@ registerBlockType( 'bulma-blocks/column', {
   save: ( props ) => {
     return (
       <div
-        className={ `column${
+        className={ `column ${
           props.attributes.useExact ?
             [
               props.attributes.sizeMo,
