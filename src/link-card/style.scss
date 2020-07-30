@@ -60,6 +60,11 @@
    }
    .media-left{
      width:128px;
+     .image{
+       img{
+         display:block;
+       }
+     }
    }
    .media-content{
      display:flex;
@@ -93,8 +98,9 @@
            content: "\f105";
            display: inline-block;
            font-family: "Font Awesome 5 Free";
-           margin-left: 1rem;
+           margin-left: 0.7rem;
            position:absolute;
+           bottom: -4px;
          }
        }
      }
