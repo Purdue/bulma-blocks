@@ -6,7 +6,7 @@ Adds Gutenberg blocks based on Bulma.io CSS framework
 
 Relevant changes are documented below.
 
-### [1.3.1] - 2020-07-30
+### [1.3.2] - 2020-07-30
 #### Updated
 - Link card fixes
 
