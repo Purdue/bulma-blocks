@@ -5,7 +5,7 @@
  */
 
 .has-dividers {
-  .column:not(:last-child) {
+  &>.column:not(:last-child) {
       border-right: 1px solid #9d9795;
   }
 }
