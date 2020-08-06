@@ -10,29 +10,34 @@
    &.card {
      display: flex;
      flex-direction: column;
+     text-decoration: none;
+     &:hover,
+     &:focus {
+       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
    
-     &-image {
-       height: 17rem;
-       width: 100%;
-   
-       .background-image {
-         display: block;
-         width: 100%;
-         height: 100%;
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
+       .media-content{
+         .title {
+           text-decoration: underline;
+         }
        }
-     }
-   
-     &-content {
+      }
+     .background-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+     .media-content {
        display: flex;
        align-items: center;
        justify-content: center;
-   
-       p {
-         font-size: 1.875rem !important;
-         font-family: acumin-pro-condensed;
+       padding: 1.25rem 1.375rem;
+       .title {
+         font-size: 1.25rem !important;
+         font-family: acumin-pro-semi-condensed;
+
        }
      }
    }

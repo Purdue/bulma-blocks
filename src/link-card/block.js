@@ -20,6 +20,7 @@ const {
   CheckboxControl,
   TextareaControl,
   Button,
+  RadioControl,
 } = wp.components;
 const { InspectorControls, MediaUploadCheck, MediaUpload } = wp.blockEditor;
 
@@ -72,6 +73,7 @@ registerBlockType( 'bulma-blocks/link-card', {
    */
 
   attributes: {
+    layout: { type: 'string', default: 'horizontal' },
     subText: { type: 'string', default: '' },
     link: { type: 'string', default: '' },
     linkText: { type: 'string', default: '' },
@@ -93,6 +95,20 @@ registerBlockType( 'bulma-blocks/link-card', {
     return [
       <InspectorControls>
         <PanelBody>
+          <PanelRow>
+            <RadioControl
+              label="Layout of the card"
+              help="Horizontal: image on the left and text on the right; Vertical: image on the top and text on the bottom."
+              selected={ props.attributes.layout }
+              options={ [
+                { label: 'Horizontal', value: 'horizontal' },
+                { label: 'Vertical', value: 'vertical' },
+              ] }
+              onChange={ ( option ) => {
+                props.setAttributes( { layout: option } )
+              } }
+            />
+          </PanelRow>
           <PanelRow>
             <TextareaControl
               label="Image Alt Text"
@@ -180,7 +196,7 @@ registerBlockType( 'bulma-blocks/link-card', {
           </div>
         </div>
         <div className="content">
-          <span>Add the link address and link text.</span>
+          <span>Add the link address{ props.attributes.layout === 'horizontal' ? ' and link text' : '' }.</span>
           <div className="field">
             <div className="control">
               <input
@@ -196,21 +212,22 @@ registerBlockType( 'bulma-blocks/link-card', {
               ></input>
             </div>
           </div>
-          <div className="field">
-            <div className="control">
-              <input
-                value={
-                  props.attributes.linkText !== '' ? props.attributes.linkText : ''
-                }
-                className="input"
-                type="text"
-                placeholder="Link text..."
-                onChange={ ( e ) => {
-                  props.setAttributes( { linkText: e.target.value } );
-                } }
-              ></input>
-            </div>
-          </div>
+          { props.attributes.layout === 'horizontal' ?
+            <div className="field">
+              <div className="control">
+                <input
+                  value={
+                    props.attributes.linkText !== '' ? props.attributes.linkText : ''
+                  }
+                  className="input"
+                  type="text"
+                  placeholder="Link text..."
+                  onChange={ ( e ) => {
+                    props.setAttributes( { linkText: e.target.value } );
+                  } }
+                ></input>
+              </div>
+            </div> : '' }
         </div>
       </div>,
     ];
@@ -228,7 +245,7 @@ registerBlockType( 'bulma-blocks/link-card', {
    * @returns {Mixed} JSX Frontend HTML.
    */
   save: ( props ) => {
-    const returned = (
+    const returned = ( props.attributes.layout === 'horizontal' ?
       <a
         href={ props.attributes.link }
         target={ props.attributes.external ? '_blank' : '_self' }
@@ -245,6 +262,22 @@ registerBlockType( 'bulma-blocks/link-card', {
           <div className={ 'read-more-button' }>
             <span>{ props.attributes.linkText !== '' ? props.attributes.linkText : 'Read More' }</span>
           </div>
+        </div>
+      </a> :
+      <a
+        href={ props.attributes.link }
+        target={ props.attributes.external ? '_blank' : '_self' }
+        className={ 'card media link-card' }
+        rel="noopener noreferrer"
+      >
+        <div
+          className="image is-2by1 background-image"
+          role="img"
+          style={ { backgroundImage: `url(${ props.attributes.imgUrl })` } }
+          aria-label={ props.attributes.altText }
+        ></div>
+        <div className={ 'media-content' }>
+          <p className={ 'title is-4' }>{ props.attributes.subText }</p>
         </div>
       </a>
     );
