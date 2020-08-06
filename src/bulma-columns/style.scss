@@ -8,4 +8,7 @@
   &>.column:not(:last-child) {
       border-right: 1px solid #9d9795;
   }
+  &>.no-border{
+    border-right: none !important;
+  }
 }
