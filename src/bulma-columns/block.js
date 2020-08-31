@@ -72,7 +72,7 @@ registerBlockType("bulma-blocks/columns", {
    */
 
   attributes: {
-    numColumns: { type: "number" },
+    numColumns: { type: "number", default: 1 },
     isCentered: { type: "boolean" },
     dividers: { type: "boolean", default: false },
     collapse: { type: "string", default: "" },
@@ -89,8 +89,7 @@ registerBlockType("bulma-blocks/columns", {
   ),
 
   edit: (props) => {
-    if (!props.attributes.numColumns) {
-      props.setAttributes({ numColumns: 1 });
+    if (props.attributes.numColumns === 1) {
       updateColumns(props, 1, 1);
     }
     if (!props.attributes.isCentered) {
@@ -221,7 +220,8 @@ const updateColumns = (props, oldNum, newNum) => {
   const select = wp.data.select("core/block-editor");
   let innerBlocks = select.getBlock(props.clientId).innerBlocks;
 
-  const newColumn = newNum > oldNum;
+  const adding = newNum > oldNum;
+  const triedZero = newNum === 0
 
   if (oldNum === 1 && oldNum === newNum) {
     const firstBlock = createBlock("bulma-blocks/column");
@@ -229,14 +229,23 @@ const updateColumns = (props, oldNum, newNum) => {
     wp.data
       .dispatch("core/block-editor")
       .replaceInnerBlocks(props.clientId, innerBlocks, false);
-  } else if (newColumn) {
-    const newColumnToAdd = createBlock("bulma-blocks/column");
-    innerBlocks.push(newColumnToAdd);
+  } else if (adding && !triedZero) {
+    const newToAdd = newNum - oldNum
+
+    for(let i = 0; i < newToAdd; i++) {
+      const newColumn = createBlock('bulma-blocks/column')
+      innerBlocks.push(newColumn)
+    }
+
     wp.data
       .dispatch("core/block-editor")
       .replaceInnerBlocks(props.clientId, innerBlocks, false);
-  } else {
-    innerBlocks.pop();
+  } else if(!adding && !triedZero) {
+    const removingNum = oldNum - newNum
+
+    for(let i = 0; i < removingNum; i++) {
+      innerBlocks.pop();
+    }
     wp.data
       .dispatch("core/block-editor")
       .replaceInnerBlocks(props.clientId, innerBlocks, false);
