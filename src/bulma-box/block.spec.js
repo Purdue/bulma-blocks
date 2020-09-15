@@ -38,6 +38,10 @@ describe( `🔬 ${block.blockTitle} Block`, () => {
         const innerBlockButton = await page.$('.block-editor-button-block-appender[aria-label="Add block"]')
         await innerBlockButton.click()
 
+        await page.focus('.block-editor-inserter__quick-inserter input')
+        const typeString = "paragraph"
+        await page.keyboard.type(typeString, {delay: 10})
+
         const blockButton = await page.$('.components-button.editor-block-list-item-paragraph')
         await blockButton.click()
 
