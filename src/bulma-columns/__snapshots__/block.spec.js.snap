@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Columns Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Adding/Removing Columns 🔎 Add Columns. 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Adding/Removing Columns 🔎 Add then remove Columns. 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":2,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
