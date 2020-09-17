@@ -8,7 +8,7 @@ exports[`🔬 Bulma - Columns Block 🔎 Block should be available. 1`] = `
 <!-- /wp:bulma-blocks/columns -->"
 `;
 
-exports[`🔬 Bulma - Columns Block 🔬 Adding/Removing Columns 🔎 Add Columns. 1`] = `
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Adding/Removing Columns 🔎 Add Columns. 1`] = `
 "<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
 <div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
 <div class=\\"column     \\"></div>
@@ -24,13 +24,113 @@ exports[`🔬 Bulma - Columns Block 🔬 Adding/Removing Columns 🔎 Add Column
 <!-- /wp:bulma-blocks/columns -->"
 `;
 
-exports[`🔬 Bulma - Columns Block 🔬 Adding/Removing Columns 🔎 Add then remove Columns. 1`] = `
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Adding/Removing Columns 🔎 Add then remove Columns. 1`] = `
 "<!-- wp:bulma-blocks/columns {\\"numColumns\\":2,\\"isCentered\\":false} -->
 <div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
 <div class=\\"column     \\"></div>
 <!-- /wp:bulma-blocks/column -->
 
 <!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Adding/Removing Columns 🔎 Entering number larger than max should produce max number of columns 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":6,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Checkbox Settings 🔎 Add Diviers Between Columns 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false,\\"dividers\\":true} -->
+<div class=\\"columns is-multiline   has-dividers\\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Checkbox Settings 🔎 Center Columns 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":true} -->
+<div class=\\"columns is-centered is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Background Color Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false,\\"bgColor\\":\\"has-background-black\\"} -->
+<div class=\\"columns is-multiline  has-background-black \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Background Color Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false,\\"bgColor\\":\\"has-background-grey-lighter\\"} -->
+<div class=\\"columns is-multiline  has-background-grey-lighter \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Background Color Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false,\\"bgColor\\":\\"has-background-black-ter\\"} -->
+<div class=\\"columns is-multiline  has-background-black-ter \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Background Color Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Collapse Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false,\\"collapse\\":\\"is-mobile\\"} -->
+<div class=\\"columns is-multiline is-mobile  \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Collapse Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false,\\"collapse\\":\\"is-desktop\\"} -->
+<div class=\\"columns is-multiline is-desktop  \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Columns Collapse Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
 <div class=\\"column     \\"></div>
 <!-- /wp:bulma-blocks/column --></div>
 <!-- /wp:bulma-blocks/columns -->"
