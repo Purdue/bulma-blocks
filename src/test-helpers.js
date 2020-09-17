@@ -87,4 +87,6 @@ export const updateRangeInput = async (selector, number) => {
       await page.keyboard.type(`${number}`, {delay: 10})
     }
 
+    await page.keyboard.press('Enter')
+
 }
