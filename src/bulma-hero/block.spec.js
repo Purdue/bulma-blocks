@@ -7,10 +7,8 @@ import {
 } from '@wordpress/e2e-test-utils';
 
 import {
-    clickElementByText,
+    clickRadio,
     blockStartup,
-    clickCheckbox,
-    updateRangeInput, 
     selectOption
 } from '../test-helpers'
 
