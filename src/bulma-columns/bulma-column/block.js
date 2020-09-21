@@ -396,8 +396,9 @@ const { createHigherOrderComponent } = wp.compose;
 const modifyBlockListBlockColumn = createHigherOrderComponent(
   ( BlockListBlock ) => {
     return ( props ) => {
+      let classnames;
       if ( props.block.name === 'bulma-blocks/column' ) {
-        props.className = [
+        classnames = [
           props.block.attributes.className,
           'column',
           `${
@@ -412,7 +413,7 @@ const modifyBlockListBlockColumn = createHigherOrderComponent(
           }`,
         ].join( ' ' );
       }
-      return <BlockListBlock { ...props } />;
+      return <BlockListBlock { ...props } wrapperProps={{'className': classnames}} />;
     };
   },
   'modifyBlockListBlockColumn'
