@@ -1,0 +1,849 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Columns Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔎 Columns Background Color Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"bgColor\\":\\"has-background-black\\"} -->
+<div class=\\"column     has-background-black\\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔎 Columns Background Color Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"bgColor\\":\\"has-background-grey-lighter\\"} -->
+<div class=\\"column     has-background-grey-lighter\\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔎 Columns Background Color Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"bgColor\\":\\"has-background-black-ter\\"} -->
+<div class=\\"column     has-background-black-ter\\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔎 Columns Background Color Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Advanced Options Checkbox 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"useExact\\":false} -->
+<div class=\\"column  \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-half-desktop\\"} -->
+<div class=\\"column   is-half-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-one-third-desktop\\"} -->
+<div class=\\"column   is-one-third-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-two-thirds-desktop\\"} -->
+<div class=\\"column   is-two-thirds-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-one-quarter-desktop\\"} -->
+<div class=\\"column   is-one-quarter-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 5`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-three-quarters-desktop\\"} -->
+<div class=\\"column   is-three-quarters-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 6`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-one-fifth-desktop\\"} -->
+<div class=\\"column   is-one-fifth-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 7`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-two-fifths-desktop\\"} -->
+<div class=\\"column   is-two-fifths-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 8`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-three-fifths-desktop\\"} -->
+<div class=\\"column   is-three-fifths-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 9`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeDesk\\":\\"is-four-fifths-desktop\\"} -->
+<div class=\\"column   is-four-fifths-desktop  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Desktop Options 10`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-half-mobile\\"} -->
+<div class=\\"column is-half-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-one-third-mobile\\"} -->
+<div class=\\"column is-one-third-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-two-thirds-mobile\\"} -->
+<div class=\\"column is-two-thirds-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-one-quarter-mobile\\"} -->
+<div class=\\"column is-one-quarter-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 5`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-three-quarters-mobile\\"} -->
+<div class=\\"column is-three-quarters-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 6`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-one-fifth-mobile\\"} -->
+<div class=\\"column is-one-fifth-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 7`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-two-fifths-mobile\\"} -->
+<div class=\\"column is-two-fifths-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 8`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-three-fifths-mobile\\"} -->
+<div class=\\"column is-three-fifths-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 9`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeMo\\":\\"is-four-fifths-mobile\\"} -->
+<div class=\\"column is-four-fifths-mobile    \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Mobile Options 10`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-half-tablet\\"} -->
+<div class=\\"column  is-half-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-one-third-tablet\\"} -->
+<div class=\\"column  is-one-third-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-two-thirds-tablet\\"} -->
+<div class=\\"column  is-two-thirds-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-one-quarter-tablet\\"} -->
+<div class=\\"column  is-one-quarter-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 5`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-three-quarters-tablet\\"} -->
+<div class=\\"column  is-three-quarters-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 6`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-one-fifth-tablet\\"} -->
+<div class=\\"column  is-one-fifth-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 7`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-two-fifths-tablet\\"} -->
+<div class=\\"column  is-two-fifths-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 8`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-three-fifths-tablet\\"} -->
+<div class=\\"column  is-three-fifths-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 9`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeTab\\":\\"is-four-fifths-tablet\\"} -->
+<div class=\\"column  is-four-fifths-tablet   \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Tablet Options 10`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-half-widescreen\\"} -->
+<div class=\\"column    is-half-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-one-third-widescreen\\"} -->
+<div class=\\"column    is-one-third-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-two-thirds-widescreen\\"} -->
+<div class=\\"column    is-two-thirds-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-one-quarter-widescreen\\"} -->
+<div class=\\"column    is-one-quarter-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 5`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-three-quarters-widescreen\\"} -->
+<div class=\\"column    is-three-quarters-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 6`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-one-fifth-widescreen\\"} -->
+<div class=\\"column    is-one-fifth-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 7`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-two-fifths-widescreen\\"} -->
+<div class=\\"column    is-two-fifths-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 8`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-three-fifths-widescreen\\"} -->
+<div class=\\"column    is-three-fifths-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 9`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"sizeWide\\":\\"is-four-fifths-widescreen\\"} -->
+<div class=\\"column    is-four-fifths-widescreen \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Advanced Column Size Settings 🔎 Widescreen Options 10`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 1`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-half\\",\\"useExact\\":false} -->
+<div class=\\"column is-half \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 2`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-one-third\\",\\"useExact\\":false} -->
+<div class=\\"column is-one-third \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 3`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-two-thirds\\",\\"useExact\\":false} -->
+<div class=\\"column is-two-thirds \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 4`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-one-quarter\\",\\"useExact\\":false} -->
+<div class=\\"column is-one-quarter \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 5`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-three-quarters\\",\\"useExact\\":false} -->
+<div class=\\"column is-three-quarters \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 6`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-one-fifth\\",\\"useExact\\":false} -->
+<div class=\\"column is-one-fifth \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 7`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-two-fifths\\",\\"useExact\\":false} -->
+<div class=\\"column is-two-fifths \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 8`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-three-fifths\\",\\"useExact\\":false} -->
+<div class=\\"column is-three-fifths \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 9`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"size\\":\\"is-four-fifths\\",\\"useExact\\":false} -->
+<div class=\\"column is-four-fifths \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
+
+exports[`🔬 Bulma - Columns Block 🔬 Side Panel Settings 🔬 Simple Column Size Setting 🔎 Simple Column Size Options 10`] = `
+"<!-- wp:bulma-blocks/columns {\\"numColumns\\":3,\\"isCentered\\":false} -->
+<div class=\\"columns is-multiline   \\"><!-- wp:bulma-blocks/column {\\"useExact\\":false} -->
+<div class=\\"column  \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column -->
+
+<!-- wp:bulma-blocks/column -->
+<div class=\\"column     \\"></div>
+<!-- /wp:bulma-blocks/column --></div>
+<!-- /wp:bulma-blocks/columns -->"
+`;
