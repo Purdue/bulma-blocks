@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Box Block 🔎 Add inner block button. 1`] = `
+"<!-- wp:bulma-blocks/box -->
+<div class=\\"box\\"><!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:bulma-blocks/box -->"
+`;
+
+exports[`🔬 Bulma - Box Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/box -->
+<div class=\\"box\\"></div>
+<!-- /wp:bulma-blocks/box -->"
+`;
