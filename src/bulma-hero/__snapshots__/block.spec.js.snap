@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Hero Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/hero {\\"option\\":\\"sm\\"} -->
+<div class=\\"hero sm \\"><div class=\\"hero-body\\"></div></div>
+<!-- /wp:bulma-blocks/hero -->"
+`;
+
+exports[`🔬 Bulma - Hero Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 1`] = `
+"<!-- wp:bulma-blocks/hero {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-black\\"} -->
+<div class=\\"hero sm has-background-black\\"><div class=\\"hero-body\\"></div></div>
+<!-- /wp:bulma-blocks/hero -->"
+`;
+
+exports[`🔬 Bulma - Hero Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 2`] = `
+"<!-- wp:bulma-blocks/hero {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-grey-lighter\\"} -->
+<div class=\\"hero sm has-background-grey-lighter\\"><div class=\\"hero-body\\"></div></div>
+<!-- /wp:bulma-blocks/hero -->"
+`;
+
+exports[`🔬 Bulma - Hero Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 3`] = `
+"<!-- wp:bulma-blocks/hero {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-black-ter\\"} -->
+<div class=\\"hero sm has-background-black-ter\\"><div class=\\"hero-body\\"></div></div>
+<!-- /wp:bulma-blocks/hero -->"
+`;
+
+exports[`🔬 Bulma - Hero Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 4`] = `
+"<!-- wp:bulma-blocks/hero {\\"option\\":\\"sm\\"} -->
+<div class=\\"hero sm \\"><div class=\\"hero-body\\"></div></div>
+<!-- /wp:bulma-blocks/hero -->"
+`;
