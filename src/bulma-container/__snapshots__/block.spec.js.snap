@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Container Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/container -->
+<div class=\\"container  \\"></div>
+<!-- /wp:bulma-blocks/container -->"
+`;
+
+exports[`🔬 Bulma - Container Block 🔬 Side Panel Settings 🔬 Checkbox Settings 🔎 Full Width Option 1`] = `
+"<!-- wp:bulma-blocks/container {\\"fluidChecked\\":true} -->
+<div class=\\"container  is-fluid \\"></div>
+<!-- /wp:bulma-blocks/container -->"
+`;
+
+exports[`🔬 Bulma - Container Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 1`] = `
+"<!-- wp:bulma-blocks/container {\\"bgColor\\":\\"has-background-black\\"} -->
+<div class=\\"container  has-background-black\\"></div>
+<!-- /wp:bulma-blocks/container -->"
+`;
+
+exports[`🔬 Bulma - Container Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 2`] = `
+"<!-- wp:bulma-blocks/container {\\"bgColor\\":\\"has-background-grey-lighter\\"} -->
+<div class=\\"container  has-background-grey-lighter\\"></div>
+<!-- /wp:bulma-blocks/container -->"
+`;
+
+exports[`🔬 Bulma - Container Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 3`] = `
+"<!-- wp:bulma-blocks/container {\\"bgColor\\":\\"has-background-black-ter\\"} -->
+<div class=\\"container  has-background-black-ter\\"></div>
+<!-- /wp:bulma-blocks/container -->"
+`;
+
+exports[`🔬 Bulma - Container Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 4`] = `
+"<!-- wp:bulma-blocks/container -->
+<div class=\\"container  \\"></div>
+<!-- /wp:bulma-blocks/container -->"
+`;

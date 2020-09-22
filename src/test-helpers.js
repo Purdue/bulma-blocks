@@ -10,6 +10,16 @@ export const selectBlockByName = async ( name ) => {
     await selectBlockByClientId(clientId);
 };
 
+// Selects a specific inner block for proper testing
+export const selectInnerBlock = async () => {
+    // select inner block
+    const [inner] = [...await getAllBlocks()][0].innerBlocks
+    await selectBlockByClientId(inner.clientId)
+
+    // force open block settings
+    await clickElementByText('button', 'Block')
+}
+
 // Clicks an element on the page given an html element and inner text of the element
 // useful for clicking buttons or links with text
 export const clickElementByText = async ( elementExpression, text ) => {
@@ -86,5 +96,7 @@ export const updateRangeInput = async (selector, number) => {
       await page.keyboard.up('ControlLeft');
       await page.keyboard.type(`${number}`, {delay: 10})
     }
+
+    await page.keyboard.press('Enter')
 
 }
