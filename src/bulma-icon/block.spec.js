@@ -9,7 +9,7 @@ import {
 import {
     blockStartup,
     clickRadio,
-    selectOption
+    clickElementByText
 } from '../test-helpers'
 
 const block = {blockTitle: 'Bulma - Icon', blockName: 'bulma-blocks/icon'}
@@ -109,7 +109,35 @@ describe( `🔬 ${block.blockTitle} Block`, () => {
             })
         })
         describe( '🔬 Icon Class and Link Settings', () => {
+            test( '🔎 Icon Class Textbox', async () => {
+                await blockStartup(block)
+
+                const typeString = "Font Awesome Icon Name"
             
+                // focus the text box then type into it with the virtual keyboard
+                await clickElementByText('label', 'Font Awesome Icon Name')
+                await page.keyboard.type(typeString, {delay: 10})
+
+                const editedContent = await getEditedPostContent()
+
+                expect( editedContent).toMatchSnapshot()
+                expect( editedContent.includes(`"faClass":"${typeString}"`)).toBe(true)
+            })
+
+            test( '🔎 Icon Optional Link', async () => {
+                await blockStartup(block)
+
+                const typeString = "https://www.purdue.edu"
+            
+                // focus the text box then type into it with the virtual keyboard
+                await clickElementByText('label', 'Link (Optional)')
+                await page.keyboard.type(typeString, {delay: 10})
+
+                const editedContent = await getEditedPostContent()
+
+                expect( editedContent).toMatchSnapshot()
+                expect( editedContent.includes(`"link":"${typeString}"`)).toBe(true)
+            })
         })
     })
 

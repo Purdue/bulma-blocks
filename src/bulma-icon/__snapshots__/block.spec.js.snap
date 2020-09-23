@@ -6,6 +6,18 @@ exports[`🔬 Bulma - Icon Block 🔎 Block should be available. 1`] = `
 <!-- /wp:bulma-blocks/icon -->"
 `;
 
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Icon Class and Link Settings 🔎 Icon Class Textbox 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\",\\"faClass\\":\\"Font Awesome Icon Name\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-Font Awesome Icon Name\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Icon Class and Link Settings 🔎 Icon Optional Link 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\",\\"link\\":\\"https://www.purdue.edu\\"} -->
+<div class=\\"icon\\"><a href=\\"https://www.purdue.edu\\"><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
 exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Container Size Options 1`] = `
 "<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"is-small\\"} -->
 <div class=\\"icon is-small\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
