@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Section Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\"} -->
+<div class=\\"section sm  \\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 1`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-black\\"} -->
+<div class=\\"section sm  has-background-black\\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 2`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-grey-lighter\\"} -->
+<div class=\\"section sm  has-background-grey-lighter\\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 3`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-black-ter\\"} -->
+<div class=\\"section sm  has-background-black-ter\\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 4`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\"} -->
+<div class=\\"section sm  \\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Padding Size Options 1`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"is-medium\\"} -->
+<div class=\\"section is-medium  \\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Padding Size Options 2`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"is-large\\"} -->
+<div class=\\"section is-large  \\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Padding Size Options 3`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\"} -->
+<div class=\\"section sm  \\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
