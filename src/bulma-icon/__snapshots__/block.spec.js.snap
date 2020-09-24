@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Icon Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Icon Class and Link Settings 🔎 Icon Class Textbox 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\",\\"faClass\\":\\"Font Awesome Icon Name\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-Font Awesome Icon Name\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Icon Class and Link Settings 🔎 Icon Optional Link 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\",\\"link\\":\\"https://www.purdue.edu\\"} -->
+<div class=\\"icon\\"><a href=\\"https://www.purdue.edu\\"><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Container Size Options 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"is-small\\"} -->
+<div class=\\"icon is-small\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Container Size Options 2`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"is-medium\\"} -->
+<div class=\\"icon is-medium\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Container Size Options 3`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"is-large\\"} -->
+<div class=\\"icon is-large\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Container Size Options 4`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Size Options 1`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"fa-lg\\",\\"container\\":\\"sm\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-lg fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Size Options 2`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"fa-2x\\",\\"container\\":\\"sm\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-2x fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Size Options 3`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"fa-3x\\",\\"container\\":\\"sm\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-3x fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
+
+exports[`🔬 Bulma - Icon Block 🔬 Side Panel Settings 🔬 Radio Settings 🔎 Icon Size Options 4`] = `
+"<!-- wp:bulma-blocks/icon {\\"icon\\":\\"sm\\",\\"container\\":\\"sm\\"} -->
+<div class=\\"icon\\"><a><i class=\\"fas fa-undefined\\" aria-hidden=\\"true\\"></i></a></div>
+<!-- /wp:bulma-blocks/icon -->"
+`;
