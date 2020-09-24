@@ -189,6 +189,7 @@ registerBlockType( 'bulma-blocks/image', {
           <PanelRow>Set the width and height of the image</PanelRow>
           <PanelRow>
             <TextControl
+              id="imgWidth"
               label="Width"
               type="number"
               value={ props.attributes.imgW }
@@ -197,6 +198,7 @@ registerBlockType( 'bulma-blocks/image', {
           </PanelRow>
           <PanelRow>
             <TextControl
+              id="imgHeight"
               label="Height"
               type="number"
               value={ props.attributes.imgH }
