@@ -25,6 +25,12 @@ exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Setti
 `;
 
 exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 4`] = `
+"<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\",\\"bgColor\\":\\"has-background-boiler-gold\\"} -->
+<div class=\\"section sm  has-background-boiler-gold\\"></div>
+<!-- /wp:bulma-blocks/section -->"
+`;
+
+exports[`🔬 Bulma - Section Block 🔬 Side Panel Settings 🔬 Dropdown Settings 🔎 Background Color Options 5`] = `
 "<!-- wp:bulma-blocks/section {\\"option\\":\\"sm\\"} -->
 <div class=\\"section sm  \\"></div>
 <!-- /wp:bulma-blocks/section -->"

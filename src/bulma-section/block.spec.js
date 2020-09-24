@@ -90,6 +90,15 @@ describe( `🔬 ${block.blockTitle} Block`, () => {
                 
                 expect( editedContent.includes('"bgColor":"has-background-black-ter"')).toBe(true)
                 expect( editedContent ).toMatchSnapshot()
+                
+
+                // gold background option select
+                await selectOption('Background Color', 'has-background-boiler-gold')
+                
+                editedContent = await getEditedPostContent()
+                
+                expect( editedContent.includes('"bgColor":"has-background-boiler-gold"')).toBe(true)
+                expect( editedContent ).toMatchSnapshot()
 
 
                 // no background option select (DEFAULT)
@@ -100,6 +109,7 @@ describe( `🔬 ${block.blockTitle} Block`, () => {
                 expect( editedContent.includes('"bgColor":"has-background-black"')).toBe(false)
                 expect( editedContent.includes('"bgColor":"has-background-grey-lighter"')).toBe(false)
                 expect( editedContent.includes('"bgColor":"has-background-black-ter"')).toBe(false)
+                expect( editedContent.includes('"bgColor":"has-background-boiler-gold"')).toBe(false)
                 expect( editedContent ).toMatchSnapshot()
             })
 
