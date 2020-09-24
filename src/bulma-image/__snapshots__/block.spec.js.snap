@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Bulma - Image Block 🔎 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Alt Text and Caption Settings 🔎 Alt Text Textarea 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"Test Alt Text\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"Test Alt Text\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Alt Text and Caption Settings 🔎 Image Caption Textarea 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"Test Image Caption\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/><div class=\\"bulma-blocks-image__caption\\"><p>Test Image Caption</p></div></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Alt Text and Caption Settings 🔎 Image Photo Credit Textbox 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"Test Image Caption Credit\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-square\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-square full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 2`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-5by4\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-5by4 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 3`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-4by3\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-4by3 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 4`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-3by2\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-3by2 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 5`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-5by3\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-5by3 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 6`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-16by9\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-16by9 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 7`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-2by1\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-2by1 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 8`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-3by1\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-3by1 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 9`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-4by5\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-4by5 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 10`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-3by4\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-3by4 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 11`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-2by3\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-2by3 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 12`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-3by5\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-3by5 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 13`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-9by16\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-9by16 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 14`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-1by2\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-1by2 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 15`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"is-1by3\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<div><figure class=\\"image is-1by3 full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure></div>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Aspect Ratio Options 16`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Height and Width Options 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"400\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Height and Width Options 2`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"400\\",\\"imgH\\":\\"400\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Image Alignment Options 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"center\\"} -->
+<figure class=\\"image  center  \\" style=\\"margin-bottom:0.5rem !important\\"><img alt=\\"\\" src=\\"\\" style=\\"max-width:px;max-height:px\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Image Alignment Options 2`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"left\\"} -->
+<figure class=\\"image  left  \\" style=\\"margin-bottom:0.5rem !important\\"><img alt=\\"\\" src=\\"\\" style=\\"max-width:px;max-height:px\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Image Alignment Options 3`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"right\\"} -->
+<figure class=\\"image  right  \\" style=\\"margin-bottom:0.5rem !important\\"><img alt=\\"\\" src=\\"\\" style=\\"max-width:px;max-height:px\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Image Alignment Options 4`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\"} -->
+<figure class=\\"image   full \\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
+
+exports[`🔬 Bulma - Image Block 🔬 Side Panel Settings 🔬 Image Size and Alignment Settings 🔎 Mobile Stretch Checkbox 1`] = `
+"<!-- wp:bulma-blocks/image {\\"size\\":\\"\\",\\"imgUrl\\":\\"\\",\\"imgW\\":\\"\\",\\"imgH\\":\\"\\",\\"altText\\":\\"\\",\\"caption\\":\\"\\",\\"captionCredit\\":\\"\\",\\"align\\":\\"\\",\\"fullWidthMo\\":true} -->
+<figure class=\\"image   full full-width-mo\\" style=\\"margin-bottom:3rem !important\\"><img alt=\\"\\" src=\\"\\" class=\\"full-width-mo\\"/></figure>
+<!-- /wp:bulma-blocks/image -->"
+`;
