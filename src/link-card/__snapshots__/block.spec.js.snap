@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🔬 Link Card Block 🔬 Block Editor Fields 🔎 Card Link Text 1`] = `
+"<!-- wp:bulma-blocks/link-card {\\"linkText\\":\\"Test Card Link Text\\"} -->
+<a href=\\"\\" target=\\"_self\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p><div class=\\"read-more-button\\"><span>Test Card Link Text</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Block Editor Fields 🔎 Card Link URL 1`] = `
+"<!-- wp:bulma-blocks/link-card {\\"link\\":\\"Test Card Link Url\\"} -->
+<a href=\\"Test Card Link Url\\" target=\\"_self\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p><div class=\\"read-more-button\\"><span>Read More</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Block Editor Fields 🔎 Card Text Field 1`] = `
+"<!-- wp:bulma-blocks/link-card {\\"subText\\":\\"Test Card Text\\"} -->
+<a href=\\"\\" target=\\"_self\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\">Test Card Text</p><div class=\\"read-more-button\\"><span>Read More</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Block should be available. 1`] = `
+"<!-- wp:bulma-blocks/link-card -->
+<a href=\\"\\" target=\\"_self\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p><div class=\\"read-more-button\\"><span>Read More</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Side Panel Settings 🔎 Card Layout Radio Options. 1`] = `
+"<!-- wp:bulma-blocks/link-card -->
+<a href=\\"\\" target=\\"_self\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p><div class=\\"read-more-button\\"><span>Read More</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Side Panel Settings 🔎 Card Layout Radio Options. 2`] = `
+"<!-- wp:bulma-blocks/link-card {\\"layout\\":\\"vertical\\"} -->
+<a href=\\"\\" target=\\"_self\\" class=\\"card media link-card\\" rel=\\"noopener noreferrer\\"><div class=\\"image is-2by1 background-image\\" role=\\"img\\" style=\\"background-image:url()\\" aria-label=\\"\\"></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Side Panel Settings 🔎 Image alt text should be editable. 1`] = `
+"<!-- wp:bulma-blocks/link-card {\\"altText\\":\\"Image alt text.\\"} -->
+<a href=\\"\\" target=\\"_self\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"Image alt text.\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p><div class=\\"read-more-button\\"><span>Read More</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
+
+exports[`🔬 Link Card Block 🔬 Side Panel Settings 🔎 Open link in new tab checkbox 1`] = `
+"<!-- wp:bulma-blocks/link-card {\\"external\\":true} -->
+<a href=\\"\\" target=\\"_blank\\" class=\\"card media link-card-horizontal\\" rel=\\"noopener noreferrer\\"><div class=\\"media-left\\"><figure class=\\"image\\"><img src=\\"\\" alt=\\"\\"/></figure></div><div class=\\"media-content\\"><p class=\\"title is-4\\"></p><div class=\\"read-more-button\\"><span>Read More</span></div></div></a>
+<!-- /wp:bulma-blocks/link-card -->"
+`;
