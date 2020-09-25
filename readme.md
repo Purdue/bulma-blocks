@@ -6,6 +6,10 @@ Adds Gutenberg blocks based on Bulma.io CSS framework
 
 Relevant changes are documented below.
 
+### [1.4.0] - 2020-09-25
+#### Added
+- Jest and Puppeteer end-to-end testing suites for all blocks.
+
 ### [1.3.3] - 2020-08-31
 #### Updated
 - Column add/remove logic fixed and improved 
