@@ -359,23 +359,25 @@ registerBlockType( 'bulma-blocks/image', {
           <img
             alt={ props.attributes.altText }
             src={ props.attributes.imgUrl }
-            style={
-              props.attributes.align !== '' ?
-                {
-                  maxWidth: `${ props.attributes.imgW }px`,
-                  maxHeight: `${ props.attributes.imgH }px`,
-                } :
-                {}
+            style={	
+              props.attributes.align !== ''? (props.attributes.imgH?	
+                {	
+                  maxWidth: `${ props.attributes.imgW }px`,	
+                  maxHeight: `${ props.attributes.imgH }px`,	
+                } :{	
+                  maxWidth: `${ props.attributes.imgW }px`	
+                }):	
+                {}	
             }
             className={ props.attributes.fullWidthMo ? 'full-width-mo' : '' }
           />
           { props.attributes.caption !== '' ? (
             <div
               className={ 'bulma-blocks-image__caption' }
-              style={
-                props.attributes.align !== '' ?
-                  { maxWidth: `${ props.attributes.imgW }px` } :
-                  {}
+              style={	
+                props.attributes.align !== '' && props.attributes.imgW?	
+                  { maxWidth: `${ props.attributes.imgW }px` } :	
+                  {}	
               }
             >
               <p>
