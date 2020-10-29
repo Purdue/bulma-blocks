@@ -37,9 +37,9 @@ const { InspectorControls, MediaUploadCheck, MediaUpload } = wp.blockEditor;
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'bulma-blocks/link-card', {
+registerBlockType("bulma-blocks/link-card", {
   // Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-  title: __( 'Link Card' ), // Block title.
+  title: __("Link Card"), // Block title.
   icon: (
     <svg
       aria-hidden="true"
@@ -57,7 +57,7 @@ registerBlockType( 'bulma-blocks/link-card', {
       ></path>
     </svg>
   ), // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-  category: 'bulma-blocks', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+  category: "bulma-blocks", // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
   keywords: [],
 
   /**
@@ -73,13 +73,13 @@ registerBlockType( 'bulma-blocks/link-card', {
    */
 
   attributes: {
-    layout: { type: 'string', default: 'horizontal' },
-    subText: { type: 'string', default: '' },
-    link: { type: 'string', default: '' },
-    linkText: { type: 'string', default: '' },
-    imgUrl: { type: 'string', default: '' },
-    altText: { type: 'string', default: '' },
-    external: { type: 'boolean', default: false },
+    layout: { type: "string", default: "horizontal" },
+    subText: { type: "string", default: "" },
+    link: { type: "string", default: "" },
+    linkText: { type: "string", default: "" },
+    imgUrl: { type: "string", default: "" },
+    altText: { type: "string", default: "" },
+    external: { type: "boolean", default: false },
   },
 
   supports: {
@@ -88,10 +88,10 @@ registerBlockType( 'bulma-blocks/link-card', {
 
   // Block description in side panel
   description: __(
-    'Create a card that serves as a link with an image and text.'
+    "Create a card that serves as a link with an image and text."
   ),
 
-  edit: ( props ) => {
+  edit: (props) => {
     return [
       <InspectorControls>
         <PanelBody>
@@ -99,79 +99,79 @@ registerBlockType( 'bulma-blocks/link-card', {
             <RadioControl
               label="Layout of the card"
               help="Horizontal: image on the left and text on the right; Vertical: image on the top and text on the bottom."
-              selected={ props.attributes.layout }
-              options={ [
-                { label: 'Horizontal', value: 'horizontal' },
-                { label: 'Vertical', value: 'vertical' },
-              ] }
-              onChange={ ( option ) => {
-                props.setAttributes( { layout: option } )
-              } }
+              selected={props.attributes.layout}
+              options={[
+                { label: "Horizontal", value: "horizontal" },
+                { label: "Vertical", value: "vertical" },
+              ]}
+              onChange={(option) => {
+                props.setAttributes({ layout: option });
+              }}
             />
           </PanelRow>
           <PanelRow>
             <TextareaControl
               label="Image Alt Text"
-              value={ props.attributes.altText }
-              onChange={ ( altText ) => props.setAttributes( { altText } ) }
+              value={props.attributes.altText}
+              onChange={(altText) => props.setAttributes({ altText })}
             />
           </PanelRow>
           <PanelRow>
             <CheckboxControl
               label="Open link in new tab?"
-              checked={ props.attributes.external }
-              onChange={ () =>
-                props.setAttributes( { external: ! props.attributes.external } )
+              checked={props.attributes.external}
+              onChange={() =>
+                props.setAttributes({ external: !props.attributes.external })
               }
             />
           </PanelRow>
         </PanelBody>
       </InspectorControls>,
 
-      <div className={ 'bulma-blocks-editor-link-card' }>
+      <div className={"bulma-blocks-editor-link-card"}>
         <div className="content">
           <span>Choose an image.</span>
           <MediaUploadCheck>
             <MediaUpload
-              onSelect={ ( img ) => {
-                props.setAttributes( {
+              onSelect={(img) => {
+                props.setAttributes({
                   imgUrl: img.url,
                   altText:
-                    props.attributes.altText !== '' ?
-                      props.attributes.altText :
-                      img.alt,
-                } );
-              } }
-              render={ ( { open } ) => {
-                return props.attributes.imgUrl !== '' ? (
-                  <div className={ 'bulma-blocks-editor-link-card__preview' }>
-                    <figure className={ 'image' }>
+                    props.attributes.altText !== ""
+                      ? props.attributes.altText
+                      : img.alt,
+                });
+              }}
+              render={({ open }) => {
+                return props.attributes.imgUrl !== "" ? (
+                  <div className={"bulma-blocks-editor-link-card__preview"}>
+                    <figure className={"image"}>
                       <img
-                        alt={ props.attributes.altText }
-                        src={ props.attributes.imgUrl }
+                        alt={props.attributes.altText}
+                        src={props.attributes.imgUrl}
                       />
                     </figure>
                     <Button
-                      className={ 'bulma-blocks-editor-link-card__button' }
-                      onClick={ open }
+                      className={"bulma-blocks-editor-link-card__button"}
+                      onClick={open}
                     >
                       Select a New Image
                     </Button>
                   </div>
                 ) : (
-                  <div className={ 'bulma-blocks-editor-link-card__container' }>
-                    <p className={ 'bulma-blocks-editor-link-card__description' }>
+                  <div className={"bulma-blocks-editor-link-card__container"}>
+                    <p className={"bulma-blocks-editor-link-card__description"}>
                       Pick an image from the media library.
                     </p>
                     <Button
-                      className={ 'bulma-blocks-editor-link-card__button' }
-                      onClick={ open }
+                      className={"bulma-blocks-editor-link-card__button"}
+                      onClick={open}
                     >
                       Open Media Library
                     </Button>
                   </div>
                 );
-              } }
+              }}
             />
           </MediaUploadCheck>
         </div>
@@ -181,53 +181,61 @@ registerBlockType( 'bulma-blocks/link-card', {
             <div className="control">
               <input
                 value={
-                  props.attributes.subText !== '' ?
-                    props.attributes.subText :
-                    ''
+                  props.attributes.subText !== ""
+                    ? props.attributes.subText
+                    : ""
                 }
                 className="input"
                 type="text"
                 placeholder="Card text..."
-                onChange={ ( e ) => {
-                  props.setAttributes( { subText: e.target.value } );
-                } }
+                onChange={(e) => {
+                  props.setAttributes({ subText: e.target.value });
+                }}
               ></input>
             </div>
           </div>
         </div>
         <div className="content">
-          <span>Add the link address{ props.attributes.layout === 'horizontal' ? ' and link text' : '' }.</span>
+          <span>
+            Add the link address
+            {props.attributes.layout === "horizontal" ? " and link text" : ""}.
+          </span>
           <div className="field">
             <div className="control">
               <input
                 value={
-                  props.attributes.link !== '' ? props.attributes.link : ''
+                  props.attributes.link !== "" ? props.attributes.link : ""
                 }
                 className="input"
                 type="text"
                 placeholder="Paste permalink or url..."
-                onChange={ ( e ) => {
-                  props.setAttributes( { link: e.target.value } );
-                } }
+                onChange={(e) => {
+                  props.setAttributes({ link: e.target.value });
+                }}
               ></input>
             </div>
           </div>
-          { props.attributes.layout === 'horizontal' ?
+          {props.attributes.layout === "horizontal" ? (
             <div className="field">
               <div className="control">
                 <input
                   value={
-                    props.attributes.linkText !== '' ? props.attributes.linkText : ''
+                    props.attributes.linkText !== ""
+                      ? props.attributes.linkText
+                      : ""
                   }
                   className="input"
                   type="text"
                   placeholder="Link text..."
-                  onChange={ ( e ) => {
-                    props.setAttributes( { linkText: e.target.value } );
-                  } }
+                  onChange={(e) => {
+                    props.setAttributes({ linkText: e.target.value });
+                  }}
                 ></input>
               </div>
-            </div> : '' }
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>,
     ];
@@ -244,43 +252,56 @@ registerBlockType( 'bulma-blocks/link-card', {
    * @param {Object} props Props.
    * @returns {Mixed} JSX Frontend HTML.
    */
-  save: ( props ) => {
-    const returned = ( props.attributes.layout === 'horizontal' ?
-      <a
-        href={ props.attributes.link }
-        target={ props.attributes.external ? '_blank' : '_self' }
-        className={ 'card media link-card-horizontal' }
-        rel="noopener noreferrer"
-      >
-        <div className={ 'media-left' }>
-          <figure className="image">
-            <img src={ props.attributes.imgUrl } alt={ props.attributes.altText } />
-          </figure>
-        </div>
-        <div className={ 'media-content' }>
-          <p className={ 'title is-4' }>{ props.attributes.subText }</p>
-          <div className={ 'read-more-button' }>
-            <span>{ props.attributes.linkText !== '' ? props.attributes.linkText : 'Read More' }</span>
+  save: (props) => {
+    const returned =
+      props.attributes.layout === "horizontal" ? (
+        <a
+          href={props.attributes.link}
+          target={props.attributes.external ? "_blank" : "_self"}
+          className={"card media link-card-horizontal"}
+          rel="noopener noreferrer"
+        >
+          <div className={"media-left"}>
+            <figure className="image">
+              <img
+                src={props.attributes.imgUrl}
+                alt={props.attributes.altText}
+              />
+            </figure>
           </div>
-        </div>
-      </a> :
-      <a
-        href={ props.attributes.link }
-        target={ props.attributes.external ? '_blank' : '_self' }
-        className={ 'card media link-card' }
-        rel="noopener noreferrer"
-      >
-        <div
-          className="image is-2by1 background-image"
-          role="img"
-          style={ { backgroundImage: `url(${ props.attributes.imgUrl })` } }
-          aria-label={ props.attributes.altText }
-        ></div>
-        <div className={ 'media-content' }>
-          <p className={ 'title is-4' }>{ props.attributes.subText }</p>
-        </div>
-      </a>
-    );
+          <div className={"media-content"}>
+            <p className={"title is-4"}>{props.attributes.subText}</p>
+            <div className={"read-more-button"}>
+              <span>
+                {props.attributes.linkText !== ""
+                  ? props.attributes.linkText
+                  : "Read More"}
+              </span>
+            </div>
+          </div>
+        </a>
+      ) : (
+        <a
+          href={props.attributes.link}
+          target={props.attributes.external ? "_blank" : "_self"}
+          className={"card media link-card"}
+          rel="noopener noreferrer"
+        >
+          {props.attributes.imgUrl !== "" ? (
+            <div
+              className="image is-2by1 background-image"
+              role="img"
+              style={{ backgroundImage: `url(${props.attributes.imgUrl})` }}
+              aria-label={props.attributes.altText}
+            ></div>
+          ) : (
+            ""
+          )}
+          <div className={"media-content"}>
+            <p className={"title is-4"}>{props.attributes.subText}</p>
+          </div>
+        </a>
+      );
     return returned;
   },
-} );
+});
