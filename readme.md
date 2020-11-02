@@ -6,7 +6,7 @@ Adds Gutenberg blocks based on Bulma.io CSS framework
 
 Relevant changes are documented below.
 
-### [1.4.1] - 2020-09-25
+### [1.4.1] - 2020-11-2
 #### Updated
 - Fix for columns block where the dividers were still on the right of each column after the columns had collapsed to one column.
 - Update `is-medium` and `is-large` padding values for the section block.
