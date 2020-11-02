@@ -19,11 +19,21 @@
   & > .no-border {
     border-right: none !important;
   }
+  
   &.is-desktop {
     @media screen and (max-width: 1024px) {
       & > .column:not(:last-child) {
         border-bottom: 1px solid #9d9795;
         border-right: none;
+      }
+    }
+  }
+
+  &.is-mobile {
+    @media screen and (max-width: 1024px) {
+      & > .column:not(:last-child) {
+        border-right: 1px solid #9d9795;
+        border-bottom: none;
       }
     }
   }
