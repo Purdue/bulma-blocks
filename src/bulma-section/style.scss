@@ -16,7 +16,14 @@
       background: #cfb991 !important;
     }
   }
-
+  &.is-medium{
+    padding-top:4rem !important;
+    padding-bottom:4rem !important;
+  }
+  &.is-large{
+    padding-top:6rem !important;
+    padding-bottom:6rem !important;
+  }
   &.side-padding {
     &-lg {
       padding-left: 7rem;
@@ -33,3 +40,4 @@
     }
   }
 }
+
