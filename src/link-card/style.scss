@@ -3,22 +3,23 @@
  *
  * CSS for both Frontend+Backend.
  */
- .link-card {
-   &.card {
-     display: flex;
-     flex-direction: column;
-     text-decoration: none;
-     &:hover,
-     &:focus {
-       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   
-       .media-content{
-         .title {
-           text-decoration: underline;
-         }
-       }
+.link-card {
+  &.card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+
+      .media-content {
+        .title {
+          text-decoration: underline;
+        }
       }
-     .background-image {
+    }
+    .background-image {
       display: block;
       width: 100%;
       height: 100%;
@@ -26,86 +27,110 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-     .media-content {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       padding: 1.25rem 1.375rem;
-       .title {
-         font-size: 1.25rem !important;
-         font-family: acumin-pro-semi-condensed;
-
-       }
-     }
-   }
- }
- .link-card-horizontal{
-   height:100%;
-   box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
-   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-   text-decoration: none;
-   padding:1rem;
-   align-items:center !important;
-   &:hover,
-   &:focus {
-     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
- 
-     .media-content{
-       .title {
-         text-decoration: underline;
-       }
- 
-       .read-more-button {
-         color: #000;
-       }
-     }
-   }
-   .media-left{
-     width:128px;
-     .image{
-      img{
-        display:block;
+    .media-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem 1.375rem;
+      .title {
+        font-size: 1.25rem !important;
+        font-family: acumin-pro-semi-condensed;
       }
     }
-   }
-   .media-content{
-     display:flex;
-     flex-direction:column;
-     align-items:center;
-     justify-content:center;
-     @media (max-width:768px){
-       overflow:hidden;
-     }
- 
-     .title{
-       margin-top:0 !important;
-       margin-bottom:1rem;
-       font-family:acumin-pro-semi-condensed;
-       font-weight:600;
-       line-height:28.8px;
-       text-align:center;
-     }
- 
- 
-     .read-more-button{
-       font-family:"United Sans",Impact, "Arial Black", "sans serif";
-       font-weight:800;
-       font-size:1.125rem;
-       text-transform:uppercase;
-       color:#8e6f3e;
-       span{
-         color:inherit;
-         position:relative;
-         &:after{
-           content: "\f105";
-           display: inline-block;
-           font-family: "Font Awesome 5 Free";
-           margin-left: 0.7rem;
-           position:absolute;
-         }
-       }
-     }
- 
-   }
- }
- 
+  }
+
+  &--square {
+    .media-content {
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+    p {
+      color: #555960 !important;
+      font-weight: 400 !important;
+    }
+    .title {
+      color: $aged-gold !important;
+      font-weight: 600 !important;
+    }
+  }
+}
+
+div.link-card--square{
+  &.card:hover{
+    box-shadow: 0 .5em 1em -.125em rgba(0,0,0,.1),0 0 0 1px rgba(0,0,0,.02);
+    
+    .title {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.link-card-horizontal {
+  height: 100%;
+  box-shadow: 0 0.5em 1em -0.125em rgba(0, 0, 0, 0.1),
+    0 0px 0 1px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  padding: 1rem;
+  align-items: center !important;
+  &:hover,
+  &:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    .media-content {
+      .title {
+        text-decoration: underline;
+      }
+
+      .read-more-button {
+        color: #000;
+      }
+    }
+  }
+  .media-left {
+    width: 128px;
+    .image {
+      img {
+        display: block;
+      }
+    }
+  }
+  .media-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 768px) {
+      overflow: hidden;
+    }
+
+    .title {
+      margin-top: 0 !important;
+      margin-bottom: 1rem;
+      font-family: acumin-pro-semi-condensed;
+      font-weight: 600;
+      line-height: 28.8px;
+      text-align: center;
+    }
+
+    .read-more-button {
+      font-family: "United Sans", Impact, "Arial Black", "sans serif";
+      font-weight: 800;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      color: #8e6f3e;
+      span {
+        color: inherit;
+        position: relative;
+        &:after {
+          content: "\f105";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          margin-left: 0.7rem;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
