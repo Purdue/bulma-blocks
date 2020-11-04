@@ -14,9 +14,8 @@
         0 10px 10px rgba(0, 0, 0, 0.22);
 
       .media-content {
-        .title {
-          text-decoration: underline;
-        }
+        border-left: solid 7px $black;
+        padding-left:0.9375rem;
       }
     }
     .background-image {
@@ -55,13 +54,26 @@
     }
   }
 }
-
+a.link-card--square{
+  &.card:hover{
+    .media-content {
+      border-left:none;
+      padding-left:1.375rem;
+      .title {
+        text-decoration: underline;
+      } 
+    }
+  }
+}
 div.link-card--square{
   &.card:hover{
     box-shadow: 0 .5em 1em -.125em rgba(0,0,0,.1),0 0 0 1px rgba(0,0,0,.02);
-    
-    .title {
-      text-decoration: none !important;
+    .media-content {
+      border-left:none;
+      padding-left:1.375rem;
+      .title {
+        text-decoration: none !important;
+      } 
     }
   }
 }
