@@ -21,6 +21,7 @@ const {
   TextareaControl,
   Button,
   RadioControl,
+  TextControl,
 } = wp.components;
 const { InspectorControls, MediaUploadCheck, MediaUpload } = wp.blockEditor;
 
@@ -80,6 +81,9 @@ registerBlockType("bulma-blocks/link-card", {
     imgUrl: { type: "string", default: "" },
     altText: { type: "string", default: "" },
     external: { type: "boolean", default: false },
+    optionalLink: { type: "boolean", default: false },
+    squareTitle: { type: "string", default: "" },
+    squareSubText: { type: "string", default: "" },
   },
 
   supports: {
@@ -103,12 +107,43 @@ registerBlockType("bulma-blocks/link-card", {
               options={[
                 { label: "Horizontal", value: "horizontal" },
                 { label: "Vertical", value: "vertical" },
+                { label: "Square", value: "square" },
               ]}
               onChange={(option) => {
                 props.setAttributes({ layout: option });
               }}
             />
           </PanelRow>
+          {props.attributes.layout === "square" ? (
+            <PanelRow>
+              <CheckboxControl
+                label="Add a link to this card?"
+                checked={props.attributes.optionalLink}
+                onChange={() =>
+                  props.setAttributes({
+                    optionalLink: !props.attributes.optionalLink,
+                  })
+                }
+              />
+            </PanelRow>
+          ) : (
+            ""
+          )}
+
+          {props.attributes.optionalLink ? (
+            <PanelRow>
+              <TextControl
+                id="linkAddress"
+                label="Link Address"
+                type="string"
+                value={props.attributes.link}
+                onChange={(link) => props.setAttributes({ link })}
+              />
+            </PanelRow>
+          ) : (
+            ""
+          )}
+
           <PanelRow>
             <TextareaControl
               label="Image Alt Text"
@@ -175,68 +210,114 @@ registerBlockType("bulma-blocks/link-card", {
             />
           </MediaUploadCheck>
         </div>
-        <div className="content">
-          <span>Add Link Card text.</span>
-          <div className="field">
-            <div className="control">
-              <input
-                value={
-                  props.attributes.subText !== ""
-                    ? props.attributes.subText
-                    : ""
-                }
-                className="input"
-                type="text"
-                placeholder="Card text..."
-                onChange={(e) => {
-                  props.setAttributes({ subText: e.target.value });
-                }}
-              ></input>
+        {props.attributes.layout !== "square" ? (
+          <div>
+            <div className="content">
+              <span>Add Link Card text.</span>
+              <div className="field">
+                <div className="control">
+                  <input
+                    value={
+                      props.attributes.subText !== ""
+                        ? props.attributes.subText
+                        : ""
+                    }
+                    className="input"
+                    type="text"
+                    placeholder="Card text..."
+                    onChange={(e) => {
+                      props.setAttributes({ subText: e.target.value });
+                    }}
+                  ></input>
+                </div>
+              </div>
+            </div>
+            <div className="content">
+              <span>
+                Add the link address
+                {props.attributes.layout === "horizontal"
+                  ? " and link text"
+                  : ""}
+                .
+              </span>
+              <div className="field">
+                <div className="control">
+                  <input
+                    value={
+                      props.attributes.link !== "" ? props.attributes.link : ""
+                    }
+                    className="input"
+                    type="text"
+                    placeholder="Paste permalink or url..."
+                    onChange={(e) => {
+                      props.setAttributes({ link: e.target.value });
+                    }}
+                  ></input>
+                </div>
+              </div>
+              {props.attributes.layout === "horizontal" ? (
+                <div className="field">
+                  <div className="control">
+                    <input
+                      value={
+                        props.attributes.linkText !== ""
+                          ? props.attributes.linkText
+                          : ""
+                      }
+                      className="input"
+                      type="text"
+                      placeholder="Link text..."
+                      onChange={(e) => {
+                        props.setAttributes({ linkText: e.target.value });
+                      }}
+                    ></input>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
-        </div>
-        <div className="content">
-          <span>
-            Add the link address
-            {props.attributes.layout === "horizontal" ? " and link text" : ""}.
-          </span>
-          <div className="field">
-            <div className="control">
-              <input
-                value={
-                  props.attributes.link !== "" ? props.attributes.link : ""
-                }
-                className="input"
-                type="text"
-                placeholder="Paste permalink or url..."
-                onChange={(e) => {
-                  props.setAttributes({ link: e.target.value });
-                }}
-              ></input>
-            </div>
-          </div>
-          {props.attributes.layout === "horizontal" ? (
+        ) : (
+          <div className="content">
+            <span>Add card title.</span>
             <div className="field">
               <div className="control">
                 <input
                   value={
-                    props.attributes.linkText !== ""
-                      ? props.attributes.linkText
+                    props.attributes.squareTitle !== ""
+                      ? props.attributes.squareTitle
                       : ""
                   }
                   className="input"
                   type="text"
-                  placeholder="Link text..."
+                  placeholder="Card title..."
                   onChange={(e) => {
-                    props.setAttributes({ linkText: e.target.value });
+                    props.setAttributes({ squareTitle: e.target.value });
                   }}
                 ></input>
               </div>
             </div>
-          ) : (
-            ""
-          )}
-        </div>
+            <span>Add card subtext.</span>
+            <div className="field">
+              <div className="control">
+                <input
+                  value={
+                    props.attributes.squareSubText !== ""
+                      ? props.attributes.squareSubText
+                      : ""
+                  }
+                  className="input"
+                  type="text"
+                  placeholder="Card subtext..."
+                  onChange={(e) => {
+                    props.setAttributes({ squareSubText: e.target.value });
+                  }}
+                ></input>
+              </div>
+            </div>
+          </div>
+        )}
       </div>,
     ];
   },
@@ -280,7 +361,7 @@ registerBlockType("bulma-blocks/link-card", {
             </div>
           </div>
         </a>
-      ) : (
+      ) : props.attributes.layout === "vertical" ? (
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
@@ -301,6 +382,45 @@ registerBlockType("bulma-blocks/link-card", {
             <p className={"title is-4"}>{props.attributes.subText}</p>
           </div>
         </a>
+      ) : props.attributes.optionalLink ? (
+        <a
+          href={props.attributes.link}
+          target={props.attributes.external ? "_blank" : "_self"}
+          className={"card media link-card link-card--square"}
+          rel="noopener noreferrer"
+        >
+          {props.attributes.imgUrl !== "" ? (
+            <div
+              className="image is-square background-image"
+              role="img"
+              style={{ backgroundImage: `url(${props.attributes.imgUrl})` }}
+              aria-label={props.attributes.altText}
+            ></div>
+          ) : (
+            ""
+          )}
+          <div className={"media-content"}>
+            <p className={"title is-4"}>{props.attributes.squareTitle}</p>
+            <p>{props.attributes.squareSubText}</p>
+          </div>
+        </a>
+      ) : (
+        <div className={"card media link-card link-card--square"}>
+          {props.attributes.imgUrl !== "" ? (
+            <div
+              className="image is-square background-image"
+              role="img"
+              style={{ backgroundImage: `url(${props.attributes.imgUrl})` }}
+              aria-label={props.attributes.altText}
+            ></div>
+          ) : (
+            ""
+          )}
+          <div className={"media-content"}>
+            <p className={"title is-4"}>{props.attributes.squareTitle}</p>
+            <p>{props.attributes.squareSubText}</p>
+          </div>
+        </div>
       );
     return returned;
   },
