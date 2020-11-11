@@ -24,7 +24,13 @@
       display: flex;
       margin-bottom: 1rem;
     }
-
+    .field {
+      .control {
+        textarea,input {
+          background: white;
+        }
+      }
+    }
     &:first-child {
       display: flex;
       flex-direction: column;
