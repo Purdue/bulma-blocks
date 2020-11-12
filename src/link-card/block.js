@@ -233,7 +233,7 @@ registerBlockType("bulma-blocks/link-card", {
                 </div>
               </div>
             </div>
-            {props.attributes.layout === "vertical" ? (
+            {props.attributes.layout === "vertical"&& props.attributes.imgUrl !== ""? (
               <div className="content">
                 <span>Add Link Card subtext.</span>
                 <div className="field">
@@ -405,7 +405,7 @@ registerBlockType("bulma-blocks/link-card", {
           )}
           <div className={"media-content"}>
             <p className={"title is-4"}>{props.attributes.subText}</p>
-            {props.attributes.verticalContent !== "" ? (
+            {props.attributes.verticalContent !== "" && props.attributes.imgUrl !== ""? (
               <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
             ) : (
               ""
