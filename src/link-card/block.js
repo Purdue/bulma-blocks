@@ -84,6 +84,7 @@ registerBlockType("bulma-blocks/link-card", {
     optionalLink: { type: "boolean", default: false },
     squareTitle: { type: "string", default: "" },
     squareSubText: { type: "string", default: "" },
+    verticalContent: { type: "string", default: "" },
   },
 
   supports: {
@@ -232,6 +233,30 @@ registerBlockType("bulma-blocks/link-card", {
                 </div>
               </div>
             </div>
+            {props.attributes.layout === "vertical"&& props.attributes.imgUrl !== ""? (
+              <div className="content">
+                <span>Add Link Card subtext.</span>
+                <div className="field">
+                  <div className="control">
+                    <textarea
+                      value={
+                        props.attributes.verticalContent !== ""
+                          ? props.attributes.verticalContent
+                          : ""
+                      }
+                      className="textarea"
+                      type="text"
+                      placeholder="Subtext text..."
+                      onChange={(e) => {
+                        props.setAttributes({ verticalContent: e.target.value });
+                      }}
+                      ></textarea>
+                  </div>
+                </div>
+              </div>
+              ) : (
+                ""
+              )}
             <div className="content">
               <span>
                 Add the link address
@@ -380,6 +405,11 @@ registerBlockType("bulma-blocks/link-card", {
           )}
           <div className={"media-content"}>
             <p className={"title is-4"}>{props.attributes.subText}</p>
+            {props.attributes.verticalContent !== "" && props.attributes.imgUrl !== ""? (
+              <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
+            ) : (
+              ""
+            )}
           </div>
         </a>
       ) : props.attributes.optionalLink ? (
