@@ -3,9 +3,9 @@
     "description": "Adds Gutenberg blocks based on Bulma.io CSS framework",
     "authors": [
         {
-            "name": "Purdue Marketing and Media",
+            "name": "Purdue Marketing and Communications",
             "email": "digital-marketing@groups.purdue.edu",
-            "homepage": "https://brand.purdue.edu"
+            "homepage": "https://marcom.purdue.edu"
         }
     ],
     "license": "GPL-3.0+",

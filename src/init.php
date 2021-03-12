@@ -112,7 +112,7 @@ function bulma_blocks_cgb_block_assets()
 // add the bulma container class around all content
 function add_content_container($content)
 {
-  error_log($content);
+  // error_log($content);
   if (is_page() || is_single()) {
     return ('<div class="content">' .
       $content .
