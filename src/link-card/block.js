@@ -230,6 +230,7 @@ registerBlockType("bulma-blocks/link-card", {
           <div>
             <div className="content">
               <span>Add Link Card text.</span>
+              <span class="footnote">*32 character limit</span>
               <div className="field">
                 <div className="control">
                   <input
