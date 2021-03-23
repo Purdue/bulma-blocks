@@ -419,7 +419,7 @@ registerBlockType("bulma-blocks/link-card", {
           ) : (
             ""
           )}
-          <div className={"media-content"}>
+          <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
             <p className={"title is-4"}>{props.attributes.subText}</p>
             {props.attributes.verticalContent !== "" && props.attributes.imgUrl !== ""? (
               <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
@@ -445,7 +445,7 @@ registerBlockType("bulma-blocks/link-card", {
           ) : (
             ""
           )}
-          <div className={"media-content"}>
+          <div className={`media-content${props.attributes.squareSubText?"":" media-content__vertical-center"}`}>
             <p className={"title is-4"}>{props.attributes.squareTitle}</p>
             <p>{props.attributes.squareSubText}</p>
           </div>
@@ -462,7 +462,7 @@ registerBlockType("bulma-blocks/link-card", {
           ) : (
             ""
           )}
-          <div className={"media-content"}>
+          <div className={`media-content${props.attributes.squareSubText?"":"media-content__vertical-center"}`}>
             <p className={"title is-4"}>{props.attributes.squareTitle}</p>
             <p>{props.attributes.squareSubText}</p>
           </div>
