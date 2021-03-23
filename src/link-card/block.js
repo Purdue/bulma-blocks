@@ -85,6 +85,7 @@ registerBlockType("bulma-blocks/link-card", {
     squareTitle: { type: "string", default: "" },
     squareSubText: { type: "string", default: "" },
     verticalContent: { type: "string", default: "" },
+    height: { type: "string", default: "100" },
   },
 
   supports: {
@@ -112,6 +113,20 @@ registerBlockType("bulma-blocks/link-card", {
               ]}
               onChange={(option) => {
                 props.setAttributes({ layout: option });
+              }}
+            />
+          </PanelRow>
+          <PanelRow>
+            <RadioControl
+              label="Height of the card"
+              help="100%: the height of the link card will be 100% height of its parent container; Auto: the height of the link card will depend upon the height of its children."
+              selected={props.attributes.height}
+              options={[
+                { label: "100%", value: "100" },
+                { label: "Auto", value: "auto" },
+              ]}
+              onChange={(option) => {
+                props.setAttributes({ height: option });
               }}
             />
           </PanelRow>
@@ -364,7 +379,7 @@ registerBlockType("bulma-blocks/link-card", {
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
-          className={"card media link-card-horizontal"}
+          className={`card media link-card-horizontal${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
         >
           <div className={"media-left"}>
@@ -390,7 +405,7 @@ registerBlockType("bulma-blocks/link-card", {
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
-          className={"card media link-card"}
+          className={`card media link-card${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
         >
           {props.attributes.imgUrl !== "" ? (
@@ -416,7 +431,7 @@ registerBlockType("bulma-blocks/link-card", {
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
-          className={"card media link-card link-card--square"}
+          className={`card media link-card link-card--square${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
         >
           {props.attributes.imgUrl !== "" ? (
@@ -435,7 +450,7 @@ registerBlockType("bulma-blocks/link-card", {
           </div>
         </a>
       ) : (
-        <div className={"card media link-card link-card--square"}>
+        <div className={`card media link-card link-card--square${props.attributes.height==="auto"?" link-card__height-auto":""}`}>
           {props.attributes.imgUrl !== "" ? (
             <div
               className="image is-square background-image"

@@ -47,7 +47,9 @@
       }
     }
   }
-
+  &.media + &.media{
+    padding-top:0;
+  }
   &--square {
     .media-content {
       display:flex;
@@ -62,6 +64,12 @@
       color: $aged-gold !important;
       font-weight: 600 !important;
     }
+    &.media + &.media{
+      padding-top:0;
+    }
+  }
+  &__height-auto{
+    height:auto !important;
   }
 }
 a.link-card--square{
