@@ -98,6 +98,11 @@ registerBlockType("bulma-blocks/link-card", {
   ),
 
   edit: (props) => {
+    const removeMedia = () => {
+      props.setAttributes({
+        imgUrl: ''
+      });
+    }
     return [
       <InspectorControls>
         <PanelBody>
@@ -207,6 +212,9 @@ registerBlockType("bulma-blocks/link-card", {
                       onClick={open}
                     >
                       Select a New Image
+                    </Button>
+                    <Button className={ 'bulma-blocks-editor-site-hero__button' } onClick={removeMedia}>
+                        Remove image
                     </Button>
                   </div>
                 ) : (
