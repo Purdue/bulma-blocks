@@ -411,6 +411,7 @@ registerBlockType("bulma-blocks/link-card", {
           </div>
         </a>
       ) : props.attributes.layout === "vertical" ? (
+        props.attributes.link?
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
@@ -429,13 +430,35 @@ registerBlockType("bulma-blocks/link-card", {
           )}
           <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
             <p className={"title is-4"}>{props.attributes.subText}</p>
-            {props.attributes.verticalContent !== "" && props.attributes.imgUrl !== ""? (
+            {props.attributes.verticalContent !== ""? (
               <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
             ) : (
               ""
             )}
           </div>
-        </a>
+        </a>:<div
+          className={`card media link-card${props.attributes.height==="auto"?" link-card__height-auto":""}`}
+          rel="noopener noreferrer"
+        >
+          {props.attributes.imgUrl !== "" ? (
+            <div
+              className="image is-2by1 background-image"
+              role="img"
+              style={{ backgroundImage: `url(${props.attributes.imgUrl})` }}
+              aria-label={props.attributes.altText}
+            ></div>
+          ) : (
+            ""
+          )}
+          <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
+            <p className={"title is-4"}>{props.attributes.subText}</p>
+            {props.attributes.verticalContent !== ""? (
+              <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
       ) : props.attributes.optionalLink ? (
         <a
           href={props.attributes.link}

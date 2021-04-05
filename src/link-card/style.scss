@@ -3,22 +3,12 @@
  *
  * CSS for both Frontend+Backend.
  */
-.link-card {
+ .link-card {
   &.card {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     height:100%;
-    &:hover,
-    &:focus {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
-
-      .media-content {
-        border-left: solid 7px $black;
-        padding-left:0.9375rem;
-      }
-    }
     .background-image {
       display: block;
       width: 100%;
@@ -77,6 +67,20 @@
   }
   &__height-auto{
     height:auto !important;
+  }
+}
+a.link-card{
+  &.card{
+    &:hover,
+    &:focus {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+
+      .media-content {
+        border-left: solid 7px $black;
+        padding-left:0.9375rem;
+      }
+    }
   }
 }
 a.link-card--square{
