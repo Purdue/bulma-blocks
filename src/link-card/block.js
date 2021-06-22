@@ -85,6 +85,7 @@ registerBlockType("bulma-blocks/link-card", {
     squareTitle: { type: "string", default: "" },
     squareSubText: { type: "string", default: "" },
     verticalContent: { type: "string", default: "" },
+    height: { type: "string", default: "100" },
   },
 
   supports: {
@@ -97,6 +98,11 @@ registerBlockType("bulma-blocks/link-card", {
   ),
 
   edit: (props) => {
+    const removeMedia = () => {
+      props.setAttributes({
+        imgUrl: ''
+      });
+    }
     return [
       <InspectorControls>
         <PanelBody>
@@ -112,6 +118,20 @@ registerBlockType("bulma-blocks/link-card", {
               ]}
               onChange={(option) => {
                 props.setAttributes({ layout: option });
+              }}
+            />
+          </PanelRow>
+          <PanelRow>
+            <RadioControl
+              label="Height of the card"
+              help="100%: the height of the link card will be 100% height of its parent container; Auto: the height of the link card will depend upon the height of its children."
+              selected={props.attributes.height}
+              options={[
+                { label: "100%", value: "100" },
+                { label: "Auto", value: "auto" },
+              ]}
+              onChange={(option) => {
+                props.setAttributes({ height: option });
               }}
             />
           </PanelRow>
@@ -193,6 +213,9 @@ registerBlockType("bulma-blocks/link-card", {
                     >
                       Select a New Image
                     </Button>
+                    <Button className={ 'bulma-blocks-editor-site-hero__button' } onClick={removeMedia}>
+                        Remove image
+                    </Button>
                   </div>
                 ) : (
                   <div className={"bulma-blocks-editor-link-card__container"}>
@@ -215,6 +238,7 @@ registerBlockType("bulma-blocks/link-card", {
           <div>
             <div className="content">
               <span>Add Link Card text.</span>
+              <span class="footnote">*32 character limit</span>
               <div className="field">
                 <div className="control">
                   <input
@@ -233,7 +257,7 @@ registerBlockType("bulma-blocks/link-card", {
                 </div>
               </div>
             </div>
-            {props.attributes.layout === "vertical"&& props.attributes.imgUrl !== ""? (
+            {props.attributes.layout === "vertical"? (
               <div className="content">
                 <span>Add Link Card subtext.</span>
                 <div className="field">
@@ -364,7 +388,7 @@ registerBlockType("bulma-blocks/link-card", {
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
-          className={"card media link-card-horizontal"}
+          className={`card media link-card-horizontal${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
         >
           <div className={"media-left"}>
@@ -387,10 +411,11 @@ registerBlockType("bulma-blocks/link-card", {
           </div>
         </a>
       ) : props.attributes.layout === "vertical" ? (
+        props.attributes.link?
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
-          className={"card media link-card"}
+          className={`card media link-card${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
         >
           {props.attributes.imgUrl !== "" ? (
@@ -403,20 +428,42 @@ registerBlockType("bulma-blocks/link-card", {
           ) : (
             ""
           )}
-          <div className={"media-content"}>
+          <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
             <p className={"title is-4"}>{props.attributes.subText}</p>
-            {props.attributes.verticalContent !== "" && props.attributes.imgUrl !== ""? (
+            {props.attributes.verticalContent !== ""? (
               <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
             ) : (
               ""
             )}
           </div>
-        </a>
+        </a>:<div
+          className={`card media link-card${props.attributes.height==="auto"?" link-card__height-auto":""}`}
+          rel="noopener noreferrer"
+        >
+          {props.attributes.imgUrl !== "" ? (
+            <div
+              className="image is-2by1 background-image"
+              role="img"
+              style={{ backgroundImage: `url(${props.attributes.imgUrl})` }}
+              aria-label={props.attributes.altText}
+            ></div>
+          ) : (
+            ""
+          )}
+          <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
+            <p className={"title is-4"}>{props.attributes.subText}</p>
+            {props.attributes.verticalContent !== ""? (
+              <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
       ) : props.attributes.optionalLink ? (
         <a
           href={props.attributes.link}
           target={props.attributes.external ? "_blank" : "_self"}
-          className={"card media link-card link-card--square"}
+          className={`card media link-card link-card--square${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
         >
           {props.attributes.imgUrl !== "" ? (
@@ -429,13 +476,13 @@ registerBlockType("bulma-blocks/link-card", {
           ) : (
             ""
           )}
-          <div className={"media-content"}>
+          <div className={`media-content${props.attributes.squareSubText?"":" media-content__vertical-center"}`}>
             <p className={"title is-4"}>{props.attributes.squareTitle}</p>
             <p>{props.attributes.squareSubText}</p>
           </div>
         </a>
       ) : (
-        <div className={"card media link-card link-card--square"}>
+        <div className={`card media link-card link-card--square${props.attributes.height==="auto"?" link-card__height-auto":""}`}>
           {props.attributes.imgUrl !== "" ? (
             <div
               className="image is-square background-image"
@@ -446,7 +493,7 @@ registerBlockType("bulma-blocks/link-card", {
           ) : (
             ""
           )}
-          <div className={"media-content"}>
+          <div className={`media-content${props.attributes.squareSubText?"":"media-content__vertical-center"}`}>
             <p className={"title is-4"}>{props.attributes.squareTitle}</p>
             <p>{props.attributes.squareSubText}</p>
           </div>

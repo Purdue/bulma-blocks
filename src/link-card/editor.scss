@@ -40,6 +40,7 @@
   }
   &>div{
     width:100%;
+    max-width: 30rem;
     &>.content:first-child {
       align-items: flex-start;
     }
@@ -99,5 +100,10 @@
     .bulma-blocks-editor-site-hero__button {
       margin-top: 0.5rem;
     }
+  }
+  .footnote{
+    margin-top:-1rem;
+    font-style:italic;
+    color:$rush-gold
   }
 }
