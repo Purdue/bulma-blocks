@@ -1,13 +1,13 @@
 .section {
   &.has-background {
     &-black {
-      p {
+      &>p {
         color: white;
       }
     }
 
     &-black-ter {
-      p {
+      &>p {
         color: white;
       }
     }

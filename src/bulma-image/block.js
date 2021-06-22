@@ -75,8 +75,8 @@ registerBlockType( 'bulma-blocks/image', {
   attributes: {
     size: { type: 'string' },
     imgUrl: { type: 'string' },
-    imgW: { type: 'number' },
-    imgH: { type: 'number' },
+    imgW: { type: 'string', default: '0' },
+    imgH: { type: 'string', default: '0' },
     altText: { type: 'string' },
     caption: { type: 'string' },
     captionCredit: { type: 'string' },
@@ -114,12 +114,6 @@ registerBlockType( 'bulma-blocks/image', {
     }
     if ( ! props.attributes.imgUrl ) {
       props.setAttributes( { imgUrl: '' } );
-    }
-    if ( ! props.attributes.imgW ) {
-      props.setAttributes( { imgW: '' } );
-    }
-    if ( ! props.attributes.imgH ) {
-      props.setAttributes( { imgH: '' } );
     }
     if ( ! props.attributes.altText ) {
       props.setAttributes( { altText: '' } );
@@ -238,11 +232,11 @@ registerBlockType( 'bulma-blocks/image', {
               props.setAttributes( {
                 imgUrl: img.url,
                 imgW:
-                  props.attributes.imgW !== '' ?
+                  props.attributes.imgW !== '0' ?
                     props.attributes.imgW :
                     img.width,
                 imgH:
-                  props.attributes.imgH !== '' ?
+                  props.attributes.imgH !== '0' ?
                     props.attributes.imgH :
                     img.height,
                 altText:
@@ -252,12 +246,36 @@ registerBlockType( 'bulma-blocks/image', {
               } );
             } }
             render={ ( { open } ) => {
+              console.log(props.attributes.align)
               return props.attributes.imgUrl !== '' ? (
                 <div className={ 'bulma-blocks-editor-image__preview' }>
-                  <figure className={ `image ${ props.attributes.size }` }>
+                  <figure 
+                    className={ `image ${ props.attributes.size }` } 
+                    style={	
+                      props.attributes.align !== '' && props.attributes.size !== '' ? (props.attributes.imgH?	
+                        {	
+                          maxWidth: `${ props.attributes.imgW }px`,	
+                          maxHeight: `${ props.attributes.imgH }px`,	
+                          paddingTop: `${ props.attributes.imgH }px`,	
+                        } :{	
+                          maxWidth: `${ props.attributes.imgW }px`	
+                        }) :	
+                        {}	
+                    }
+                  >
                     <img
                       alt={ props.attributes.altText }
                       src={ props.attributes.imgUrl }
+                      style={	
+                        props.attributes.align !== ''? (props.attributes.imgH?	
+                          {	
+                            maxWidth: `${ props.attributes.imgW }px`,	
+                            maxHeight: `${ props.attributes.imgH }px`,	
+                          } :{	
+                            maxWidth: `${ props.attributes.imgW }px`	
+                          }):	
+                          {}	
+                      }
                     />
                   </figure>
                   <Button
