@@ -10,13 +10,14 @@
     "env": "wp-env"
   },
   "dependencies": {
-    "bulma": "^0.9.1",
-    "classnames": "^2.2.6"
+    "bulma": "^0.9.4",
+    "classnames": "^2.2.6",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
     "@wordpress/e2e-test-utils": "^4.11.2",
     "@wordpress/env": "^1.6.0",
-    "@wordpress/scripts": "^12.1.1",
+    "@wordpress/scripts": "^23.0.0",
     "ignore-emit-webpack-plugin": "^2.0.2"
   }
 }
