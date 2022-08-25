@@ -14,7 +14,7 @@ const { __ } = wp.i18n // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks // Import registerBlockType() from wp.blocks
 
 const { PanelBody, PanelRow, CheckboxControl, SelectControl } = wp.components
-const { InnerBlocks, InspectorControls } = wp.blockEditor
+const { InnerBlocks, InspectorControls,useBlockProps } = wp.blockEditor
 
 // implement the bulma blocks category.
 
@@ -69,6 +69,7 @@ registerBlockType( 'bulma-blocks/container', {
 
   supports: {
     className: false,
+    anchor: true,
   },
 
   description: __( 'Add a Container layout element that can contain any content. The Container aligns content in the center of the page on screens above tablet size.' ),
@@ -146,8 +147,10 @@ registerBlockType( 'bulma-blocks/container', {
 	 * @returns {Mixed} JSX Frontend HTML.
 	 */
   save: props => {
+    const blockProps = useBlockProps.save();
+
     return (
-      <div className={ `container ${ props.attributes.fluidChecked ? ' is-fluid' : '' } ${ props.attributes.bgColor !== '' ? props.attributes.bgColor : '' }` } >
+      <div {...blockProps} className={ `container ${ props.attributes.fluidChecked ? ' is-fluid' : '' } ${ props.attributes.bgColor !== '' ? props.attributes.bgColor : '' }` } >
         <InnerBlocks.Content />
       </div>
     )

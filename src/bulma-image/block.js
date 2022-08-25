@@ -22,7 +22,7 @@ const {
   Button,
   CheckboxControl,
 } = wp.components;
-const { InspectorControls, MediaUploadCheck, MediaUpload } = wp.blockEditor;
+const { InspectorControls, MediaUploadCheck, MediaUpload,useBlockProps } = wp.blockEditor;
 
 /**
  * Register: aa Gutenberg Block.
@@ -86,6 +86,7 @@ registerBlockType( 'bulma-blocks/image', {
 
   supports: {
     className: false,
+    anchor: true,
   },
 
   // Block description in side panel
@@ -321,9 +322,11 @@ registerBlockType( 'bulma-blocks/image', {
    * @returns {Mixed} JSX Frontend HTML.
    */
   save: ( props ) => {
+    const blockProps = useBlockProps.save();
+
     const returned =
       props.attributes.size !== '' ? (
-        <div>
+        <div {...blockProps}>
           <figure
             className={ `image ${ props.attributes.size } ${
               props.attributes.align === '' ? 'full' : ''
@@ -362,7 +365,7 @@ registerBlockType( 'bulma-blocks/image', {
         </div>
       ) : (
 
-        <figure
+        <figure {...blockProps}
           className={ `image ${ props.attributes.size } ${
             props.attributes.align
           } ${ props.attributes.align === '' ? 'full' : '' } ${

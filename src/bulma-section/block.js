@@ -14,7 +14,7 @@ const { __ } = wp.i18n // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks // Import registerBlockType() from wp.blocks
 
 const { PanelBody, PanelRow, RadioControl, SelectControl } = wp.components
-const { InnerBlocks, InspectorControls } = wp.blockEditor
+const { InnerBlocks, InspectorControls,useBlockProps } = wp.blockEditor
 
 /**
  * Register: aa Gutenberg Block.
@@ -55,6 +55,7 @@ registerBlockType( 'bulma-blocks/section', {
 
   supports: {
     className: false,
+    anchor: true,
   },
 
   // Block description in side panel
@@ -134,11 +135,14 @@ registerBlockType( 'bulma-blocks/section', {
 	 * @returns {Mixed} JSX Frontend HTML.
 	 */
   save: props => {
+    const blockProps = useBlockProps.save();
+
     return (
       <div
         className={ `section ${
           props.attributes.selectedOption === 'sm' ? '' : `${ props.attributes.option }`
         }  ${ props.attributes.bgColor !== '' ? props.attributes.bgColor : '' }` }
+        {...blockProps}
       >
         <InnerBlocks.Content />
       </div>

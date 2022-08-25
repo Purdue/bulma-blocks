@@ -20,7 +20,7 @@ const {
   CheckboxControl,
   SelectControl,
 } = wp.components;
-const { InnerBlocks, InspectorControls } = wp.blockEditor;
+const { InnerBlocks, InspectorControls,useBlockProps } = wp.blockEditor;
 import { createBlock } from "@wordpress/blocks";
 
 /**
@@ -81,6 +81,7 @@ registerBlockType("bulma-blocks/columns", {
 
   supports: {
     className: false,
+    anchor: true,
   },
 
   // Block description in side panel
@@ -183,8 +184,10 @@ registerBlockType("bulma-blocks/columns", {
    * @returns {Mixed} JSX Frontend HTML.
    */
   save: (props) => {
+    const blockProps = useBlockProps.save();
+
     return (
-      <div
+      <div {...blockProps}
         className={`columns${
           props.attributes.isCentered ? " is-centered" : ""
         } is-multiline ${props.attributes.collapse || ""} ${

@@ -23,7 +23,7 @@ const {
   RadioControl,
   TextControl,
 } = wp.components;
-const { InspectorControls, MediaUploadCheck, MediaUpload } = wp.blockEditor;
+const { InspectorControls, MediaUploadCheck, MediaUpload,useBlockProps } = wp.blockEditor;
 
 /**
  * Register: aa Gutenberg Block.
@@ -90,6 +90,7 @@ registerBlockType("bulma-blocks/link-card", {
 
   supports: {
     className: false,
+    anchor: true,
   },
 
   // Block description in side panel
@@ -383,6 +384,7 @@ registerBlockType("bulma-blocks/link-card", {
    * @returns {Mixed} JSX Frontend HTML.
    */
   save: (props) => {
+    const blockProps = useBlockProps.save();
     const returned =
       props.attributes.layout === "horizontal" ? (
         <a
@@ -390,6 +392,7 @@ registerBlockType("bulma-blocks/link-card", {
           target={props.attributes.external ? "_blank" : "_self"}
           className={`card media link-card-horizontal${props.attributes.height==="auto"?" link-card__height-auto":""}`}
           rel="noopener noreferrer"
+          {...blockProps}
         >
           <div className={"media-left"}>
             <figure className="image">
