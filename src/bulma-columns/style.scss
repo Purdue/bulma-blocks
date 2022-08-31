@@ -6,12 +6,12 @@
 
 .has-dividers {
   & > .column:not(:last-child) {
-    border-right: 1px solid #9d9795;
+    border-right: 1px solid $boiler-gold;
   }
 
   @media screen and (max-width: 765px) {
     & > .column:not(:last-child) {
-      border-bottom: 1px solid #9d9795;
+      border-bottom: 1px solid $boiler-gold;
       border-right: none;
     }
   }
@@ -23,7 +23,7 @@
   &.is-desktop {
     @media screen and (max-width: 1024px) {
       & > .column:not(:last-child) {
-        border-bottom: 1px solid #9d9795;
+        border-bottom: 1px solid $boiler-gold;
         border-right: none;
       }
     }
@@ -32,7 +32,7 @@
   &.is-mobile {
     @media screen and (max-width: 1024px) {
       & > .column:not(:last-child) {
-        border-right: 1px solid #9d9795;
+        border-right: 1px solid $boiler-gold;
         border-bottom: none;
       }
     }
