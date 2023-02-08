@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@wordpress/e2e-test-utils": "^4.11.2",
-    "@wordpress/env": "^1.6.0",
+    "@wordpress/env": "^5.11.0",
     "@wordpress/scripts": "^23.0.0",
     "ignore-emit-webpack-plugin": "^2.0.2"
   }
