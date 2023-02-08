@@ -6,21 +6,19 @@
 
 .bulma-blocks-image {
   &__caption {
-    border-bottom: 1px solid #707070;
     display: flex;
     align-items: flex-start;
     padding: 0.5rem 0;
     text-align: left;
-
+    color:$steel-gray;
+    max-width:900px;
+    font-style:italic;
     p {
-      font-size: 1rem !important;
+      font-size: 0.875rem !important;
 
       span {
         font-size: 0.875rem !important;
-        font-family: "United Sans Condensed" !important;
-        color: #707070 !important;
-        text-transform: uppercase;
-        padding-left: 1rem;
+        padding-left: 0.5rem;
       }
     }
   }
@@ -37,7 +35,6 @@
     .bulma-blocks-image__caption {
       max-width: 100% !important;
       margin-bottom: 2.5rem;
-      justify-content: center;
     }
   }
 }
@@ -53,7 +50,6 @@
     .bulma-blocks-image__caption {
       max-width: 100% !important;
       margin-bottom: 2.5rem;
-      justify-content: center;
     }
   }
 }
@@ -62,8 +58,6 @@
   display: flex !important;
   flex-direction: column;
   padding: 1.5rem;
-  align-items: center;
-  justify-content: center;
 }
 
 .image {
