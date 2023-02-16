@@ -5,7 +5,7 @@
  * Description: Bulma Blocks is a Gutenberg Block plugin allowing users to create Bulma elements as blocks.
  * Author: Purdue Marketing and Communications
  * Author URI: https://marcom.purdue.edu/
- * Version: 1.4.12
+ * Version: 1.4.13
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
  *
