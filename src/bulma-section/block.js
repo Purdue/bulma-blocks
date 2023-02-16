@@ -139,10 +139,10 @@ registerBlockType( 'bulma-blocks/section', {
 
     return (
       <div
+      {...blockProps}
         className={ `section ${
           props.attributes.selectedOption === 'sm' ? '' : `${ props.attributes.option }`
         }  ${ props.attributes.bgColor !== '' ? props.attributes.bgColor : '' }` }
-        {...blockProps}
       >
         <InnerBlocks.Content />
       </div>
