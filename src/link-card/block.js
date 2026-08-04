@@ -432,7 +432,7 @@ registerBlockType("bulma-blocks/link-card", {
             ""
           )}
           <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
-            <h2 className={"title is-4"}>{props.attributes.subText}</h2>
+            <h3 className={"title is-4"}>{props.attributes.subText}</h3>
             {props.attributes.verticalContent !== ""? (
               <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
             ) : (
@@ -454,7 +454,7 @@ registerBlockType("bulma-blocks/link-card", {
             ""
           )}
           <div className={`media-content${props.attributes.verticalContent?" media-content__vertical-top":""}`}>
-            <h2 className={"title is-4"}>{props.attributes.subText}</h2>
+            <h3 className={"title is-4"}>{props.attributes.subText}</h3>
             {props.attributes.verticalContent !== ""? (
               <p className={"vertical-subtext"}>{props.attributes.verticalContent}</p>
             ) : (
@@ -480,7 +480,7 @@ registerBlockType("bulma-blocks/link-card", {
             ""
           )}
           <div className={`media-content${props.attributes.squareSubText?"":" media-content__vertical-center"}`}>
-            <h2 className={"title is-4"}>{props.attributes.squareTitle}</h2>
+            <h3 className={"title is-4"}>{props.attributes.squareTitle}</h3>
             <p>{props.attributes.squareSubText}</p>
           </div>
         </a>
@@ -497,7 +497,7 @@ registerBlockType("bulma-blocks/link-card", {
             ""
           )}
           <div className={`media-content${props.attributes.squareSubText?"":"media-content__vertical-center"}`}>
-            <h2 className={"title is-4"}>{props.attributes.squareTitle}</h2>
+            <h3 className={"title is-4"}>{props.attributes.squareTitle}</h3>
             <p>{props.attributes.squareSubText}</p>
           </div>
         </div>
