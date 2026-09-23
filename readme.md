@@ -6,6 +6,10 @@ Adds Gutenberg blocks based on Bulma.io CSS framework
 
 Relevant changes are documented below.
 
+### [1.4.14] - 2026-9-23
+#### Updated
+- Accessibility Updates
+
 ### [1.4.2] - 2020-11-4
 #### Updated
 - Added square image option to link card.
